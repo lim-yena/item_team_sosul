@@ -1,0 +1,25 @@
+/* container */
+.container_full {width:96%; margin:0 auto;}
+.container {max-width:1434px; margin:0 auto;}
+
+
+/* color */
+.organic {color:#3F422F}
+.ivory{color:#FAF5EE;}
+.apricot{color:#D68B30;}
+.panBlack{color:#332E2A;}
+
+/* basic */
+.black {color:#111;}
+.gray1 {color:#444;}
+.gray2 {color:#777;}
+.gray3 {color:#aaa;}
+.gray4 {color:#ddd;}
+.white {color:#fff;}
+
+
+/* background */
+.organic_bg {background:#3F422F}
+.ivory_bg{background:#FAF5EE;}
+.apricot_bg{background:#D68B30;}
+.panBlack_bg{background:#332E2A;}
