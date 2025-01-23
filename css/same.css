@@ -29,8 +29,11 @@
 --point_txt: 0.75rem;
 
 
-} 
+/* Text-space styles */
+--basic_space: -0.02rem
+}
 
+body {letter-spacing: var(--basic_space);}
 
 /* container */
 .container_full {width:98%; margin:0 auto;}
