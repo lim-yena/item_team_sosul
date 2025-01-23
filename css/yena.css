@@ -1,5 +1,6 @@
 /* hotspot */
 .hotspot .main_tit {
     text-align:center;
-    font-weight:bold;
+    font-weight:800;
+    letter-spacing: -0.1rem;
 }
