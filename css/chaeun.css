@@ -1,72 +1,80 @@
-footer {
-    background-color: #f9f9f9;
-    border-top: 2px solid #000;
-    padding: 20px 0;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .notice {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .company-info {
-    margin-bottom: 20px;
-  }
-  
-  .company-info p {
-    margin: 5px 0;
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .footer-links a:hover {
-    color: #555;
-  }
-  
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  
-  .social-links span,
-  .app-links span {
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .social-links a img,
-  .app-links a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-  }
-  
-  .copyright {
-    text-align: center;
-    color: #888;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.header {
+  background: #3e3e3e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.header button {
+  background: #fff;
+  color: #3e3e3e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.main h1 {
+  margin-bottom: 40px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.option {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  background: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.option img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.option button {
+  background: #3e3e3e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer a {
+  color: #3e3e3e;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
