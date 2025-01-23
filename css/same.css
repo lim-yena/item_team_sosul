@@ -18,7 +18,7 @@
     
     
     /* Text styles */
-    --font-family : 'SUIT', sans-serif;
+    --font-family : 'Suit', sans-serif;
     
     
     /* Text-size styles */
@@ -33,7 +33,7 @@
     --basic_space: -0.02rem
     }
     
-    body {letter-spacing: var(--basic_space);}
+    body {letter-spacing: var(--basic_space); font-family: var(--font-family);}
     
     /* container */
     .container_full {width:98%; margin:0 auto;}
