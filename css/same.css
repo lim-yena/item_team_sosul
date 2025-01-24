@@ -33,7 +33,7 @@
     --basic_space: -0.2rem;
     }
     
-    body {letter-spacing: var(--basic_space), -0.02rem; font-family: var(--font-family), 'Suit', sans-serif;}
+    body {letter-spacing: var(--basic_space), -0.2rem; font-family: var(--font-family), 'Suit', sans-serif;}
     
     /* container */
     .container_full {width:98%; margin:0 auto;}
