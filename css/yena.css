@@ -4,3 +4,25 @@
     font-weight:800;
     letter-spacing: -0.1rem;
 }
+
+.hotspot .swiper-slide {
+    max-width: 255px;
+    height:335px;
+    transition: width 0.3s ease, transform 0.3s ease; /* width 변화에 애니메이션 추가 */
+    margin-right:20px;
+    border-radius:10px;
+    overflow: hidden;
+}
+
+.hotspot .swiper-slide-active {
+    max-width: 330px;
+    height:100%;
+    transform: scale(1.05); /* 활성화된 슬라이드에 조금 더 확대 효과 추가 */
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.hotspot .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
