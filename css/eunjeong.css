@@ -1,0 +1,72 @@
+.d-flex{
+    display: flex;
+}
+.jcc{
+    justify-content: center;
+}
+.jcb{
+    justify-content: space-between;
+}
+.aic{ 
+    align-items: center;
+}
+.aie{
+    align-items: flex-end;
+}
+.container {
+    position: relative;
+    padding: 20px 0px;
+}
+#gnb a {
+    color: black; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-size-adjust: 16px; 
+    padding: 10px;
+}
+#gnb a:hover {
+    color: #D68B30;}
+
+.top-logo{
+    position: absolute;
+    right: 831px;
+    top: 21px;
+    width: 136px;
+    height: 30px;
+
+}
+.util {
+    font-size: 12px;
+    gap: 5px; 
+    padding-top: 20px; 
+    padding-right:20px;
+    
+    }   
+.util svg {
+    width: 20px;
+    height: 20px;}
+    a{
+        text-decoration: none; 
+        color:#3F422F;
+        margin-top: 10px;
+    }
+.maintop{
+    width: 1280px;
+}
+.topwhere{
+    display: flex;
+    width: 278px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.topwhen{
+    display: flex;
+    width: 278px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.textnowrap{
+    padding: 10px;
+}
