@@ -36,8 +36,8 @@
     body {letter-spacing: var(--basic_space, -0.1rem); font-family: var(--font-family, 'Suit', sans-serif);}
     
     /* container */
-    .container_full {width:98%; margin:0 auto;}
-    .container {max-width:var(--container, 1440px); margin:0 auto;}
+    .container_full {width:98%; margin:0 auto; padding:0;}
+    .container {max-width:var(--container, 1440px); margin:0 auto; padding:0; position:relative;}
     
     
     /* color */
