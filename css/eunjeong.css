@@ -16,7 +16,7 @@
 
 
 #hd {
-    width: 1920px;
+    max-width: 1920px;
     height: 72px;
     background-color: white;
     position: relative;
@@ -27,19 +27,20 @@
     margin: 0 auto;
     padding: 20px 0px;
 }
-
+    
 #hd ul {
     width:0;
 }
 
 
 #gnb a {
-    color: black; 
+    color: #3F422F; 
     text-decoration: none;
     transition: color 0.3s ease;
     height: 32;
     text-size-adjust: 16px; 
-    padding: 10px;
+    padding: 10px; 
+    font-weight: 700; 
 }
 #gnb a:hover {
     color: #D68B30;}
@@ -53,21 +54,22 @@
 
 }
 .util {
+    color: #3F422F;  
     font-size: 12px;
+    font-weight: 600; 
     gap: 5px; 
-    padding-top: 20px; 
-    padding-right:20px;
     justify-content: flex-end;
+    padding: 5px 10px;
     
     }   
 .util svg {
     width: 20px;
-    height: 20px;}
+    height: 20px;
+    margin-right: 5px;}
     a{
         gap: 5px;
         text-decoration: none; 
         color:#3F422F;
-        margin-top: 10px;
     }
 
 .video-container {
@@ -85,7 +87,7 @@
 
 .video-bg {
     position: absolute;
-    width: 1798px;
+    max-width: 1798px;
     height: 870px;
     top: 50%;
     border-radius:10px;
@@ -94,13 +96,20 @@
     clip-path: inset(0 round 10px);
 }
 
+.video-icon{
+    position: absolute;
+    justify-content: center;
+    bottom: 39.877px;     
+}
+
+
 .search-box,
 .search-container {
         z-index: 20;}
 
 .search-box{
     position: absolute;
-    width: 1435px;
+    max-width: 1435px;
     height: 80px;
     justify-content: center;
     align-content: center;
@@ -112,7 +121,7 @@
 }
 .search-box svg {
     display: flex;
-    width: 1435px;
+    max-width: 1435px;
     height: 80px;
     justify-content: center; 
     align-items: center;
@@ -131,27 +140,20 @@
     z-index: 20; 
     
 }
-.topwhere{
+.topwhere, .topwhen {
     display: flex;
-    width: 278px;
+    max-width: 278px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     line-height: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 10px;
+    color: #3F422F;
   
 }
-.topwhen{
-    display: flex;
-    width: 278px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    line-height: 16px;
-}
 
-.topwhere .topwhere{
-    margin: 0 10px;
-}
 
 .textnowrap{
     padding: 10px;
@@ -175,11 +177,12 @@
     height: 23px;
     flex-shrink: 0;
     margin-right: 10px;
+    color: #3F422F;
 }
 .search-container .close-btn{
     position: absolute;
     top: 0;
-    right: 40px;
+    right: 0;           
     background: none;
     border: none;
     width: 20px;  
@@ -196,7 +199,7 @@
 .search-container .search-btn {
     width: 101px;
     height: 40px;
-    padding: 15px 40px;
+    padding: 15px 35px;
     background-color: #3F422F;
     color: white;
     font-size: 16px;
@@ -205,4 +208,43 @@
     line-height: normal;
     white-space: nowrap;
     align-self: flex-end;
+    text-align: center;
 }
+
+.quick-menu{
+    position: fixed; 
+    bottom: 40px; 
+    right: 50px; 
+    width: 70px;
+    height: 280px;
+    background: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    stroke-width: 1px;
+    stroke: #DDD;
+    z-index: 1000;
+}
+.quick-btn {
+    width: 70px;
+    height: 70px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    flex-direction: column;
+
+}
+.quick-btn svg {
+    width: 24px;
+    height: 24px;}
+.btn-top svg{fill: #FFF;}
+
+.btn-reserve { background-color:#DDDDDD;}
+.btn-chat { background-color: #DDDDDD; }
+.btn-log { background-color: #DDDDDD; }
+.btn-top { color: #FFF; background-color: #3F422F}
