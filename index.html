@@ -39,9 +39,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- 제이쿼리 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <!-- 커스터마이징 -->
     <link rel="" type="" href="">
     <link rel="stylesheet" href="css/same.css">
@@ -53,7 +50,345 @@
     <link rel="stylesheet" href="css/chaeun.css">
 
 </head>
-<body>
+<body> 
     <!-- 작업 진행하시고 브런치 따로 만들어서 저장해주세요! -->
+    <header id="hd" class="d-flex">
+        <div class="container d-flex jcb aic">
+            <h1 class="order-1"><a href=""><img src="./img/logo/logo.svg" alt=""></a></h1>
+            <ul id="gnb" class="d-flex order-0 gap-3">
+                <li><a href="" class="text-nowrap">예약하기</a></li>
+                <li><a href="" class="text-nowrap">오직여기</a></li>
+                <li><a href="" class="text-nowrap">프로모션</a></li>
+                <li><a href="" class="text-nowrap">브랜드</a></li>
+            </ul>
+            <ul class="util d-flex order-2 text-nowrap aic gap-5">
+                <li><a href="" class="text-nowrap"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
+                    <path d="M19.5 11V6" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
+                    <path d="M7.23251 10.9999H10.047L5.77351 1L1.5 10.9999H4.31452L5.77351 7.5861L7.23251 10.9999Z" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
+                    <path d="M4.31592 11H7.23391" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
+                    <path d="M1.5 11V6" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
+                    <path d="M5.77405 1L7.42447 4.85502L8.79551 3.46322L10.1717 4.85502L11.5479 3.46322L12.9242 4.85502L14.2952 3.46322L15.6714 4.85502L16.4992 4.01994L15.2058 1H5.77405Z" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
+                    <path d="M14.2954 3.46313L12.9244 4.85493L11.5482 3.46313L10.1719 4.85493L8.79572 3.46313L7.42468 4.85493L10.0478 10.9999H19.4795L16.4994 4.01985L15.6716 4.85493L14.2954 3.46313Z" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
+                    <path d="M10.046 11V6" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
+                    </svg>
+                    예약하기</a></li>
+                <li><a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5314 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.4199 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.2458 10.5493L10.3019 13.3754L8.47086 11.806" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    로그인</a></li>
+            </ul>
+        </div>       
+    </header>
+    <div class="video-container">
+        <div class="video-bg"> 
+            <video autoplay muted loop>
+            <source src="./video/main_video.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="search-box jcb aic">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1435" height="80" viewBox="0 0 1435 80" fill="none">
+            <path d="M0 0H1435L1398.51 60.6284C1391.27 72.6491 1378.27 80 1364.24 80H70.7646C56.7343 80 43.7296 72.6491 36.494 60.6284L0 0Z" fill="white"/>
+        </svg>
+    </div>
+
+    <div class="search-container d-flex aic"> 
+        <div class="topwhere">어디갈까요? 
+            <button class="d-flex aic">
+             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M19.4253 8.4061C19.4253 4.45249 16.0986 1.29641 12.1646 1.73486C9.18381 2.0637 6.77338 4.50541 6.40538 7.55943C6.19194 9.32835 6.65562 10.9763 7.55723 12.2803L11.9622 19.3447C12.4186 19.9985 13.3643 19.9985 13.8206 19.3447L18.2256 12.2803C18.9801 11.1842 19.429 9.84995 19.429 8.4061H19.4253Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.8889 11.1279C14.5087 11.1279 15.8218 9.77921 15.8218 8.11548C15.8218 6.45175 14.5087 5.10303 12.8889 5.10303C11.269 5.10303 9.95587 6.45175 9.95587 8.11548C9.95587 9.77921 11.269 11.1279 12.8889 11.1279Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.9072 14.6731H21.4447L24.3887 24.6945H1.38867L4.33267 14.6731H9.05411" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            지역을 선택하세요.
+            </button>
+        </div> 
+        <div class="topwhen">언제갈까요?
+            <button class="d-flex aic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M23 3.86963H1V23.0001H23V3.86963Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 9.60864H23" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 1V5.78261" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17 1V5.78261" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.7037 13.7759L11.7037 18.5585L8.59375 15.9025" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            날짜를 선택하세요.
+            </button>
+        </div>
+
+        <button class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox    ="0 0 22 22" fill="none" >
+                <path d="M1 21L21 1M1 1L21 21" stroke="#3F422F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+            </svg>
+        </button>
+
+        <button class="search-btn d-flex jic aic">검색</button>
+    </div> 
+
+
+
+
+    
+    <!-- hotspot -->
+    <div class="hotspot p100">
+        <div class="container">
+            <div class="main_tit">인기스팟</div>
+            <section class="swiper conSwiper1">
+                <div class="hotplace_card_box swiper-wrapper d-flex">
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_1.jpg" alt="인기스팟이미지1">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬의 인기스팟을<br>안내해드립니다.</div>
+                            <div class="basic_txt white">놓치면 아쉬운 점!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_2.jpg" alt="인기스팟이미지2">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬 포인트 <br>확인해보세요.</div>
+                            <div class="basic_txt white">이것이 소슬 포인트!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_3.jpg" alt="인기스팟이미지3">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬의 인기스팟을<br>안내해드립니다.</div>
+                            <div class="basic_txt white">놓치면 아쉬운 점!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_4.jpg" alt="인기스팟이미지4">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬 포인트 <br>확인해보세요.</div>
+                            <div class="basic_txt white">이것이 소슬 포인트!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_5.jpg" alt="인기스팟이미지5">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬의 인기스팟을<br>안내해드립니다.</div>
+                            <div class="basic_txt white">놓치면 아쉬운 점!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_1.jpg" alt="인기스팟이미지1">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬의 인기스팟을<br>안내해드립니다.</div>
+                            <div class="basic_txt white">놓치면 아쉬운 점!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_2.jpg" alt="인기스팟이미지2">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬 포인트 <br>확인해보세요.</div>
+                            <div class="basic_txt white">이것이 소슬 포인트!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_3.jpg" alt="인기스팟이미지3">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬의 인기스팟을<br>안내해드립니다.</div>
+                            <div class="basic_txt white">놓치면 아쉬운 점!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_4.jpg" alt="인기스팟이미지4">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬 포인트 <br>확인해보세요.</div>
+                            <div class="basic_txt white">이것이 소슬 포인트!</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/image/hotplace_5.jpg" alt="인기스팟이미지5">
+                        <div class="hotplace_txt">
+                            <div class="sub_tit white">소슬의 인기스팟을<br>안내해드립니다.</div>
+                            <div class="basic_txt white">놓치면 아쉬운 점!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotspot_btns">
+                    <div class="hotspot-button-prev"></div>
+                    <div class="hotspot-button-next"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+   
+
+
+
+    <!-- magazin -->
+    <div class="magazin p100 bgGray">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_short.jpg"></div></div>
+                    <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_short.jpg"></div></div>
+                    <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_short.jpg"></div></div>
+                    <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_short.jpg"></div></div>
+                    <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_short.jpg"></div></div>
+                </div>
+            </div>
+            <div class="magazin_txt">
+                <div class="point_txt organic">SOSUL MAGAZINE</div>
+                <div class="main_tit">
+                    소슬이 추천하는<br>
+                    감성글램핑
+                </div>
+                <div class="basic_txt gray3">
+                    소중한 사람들과 함께 모여<br>
+                    편안한 휴식과 낭만과 여유로움을<br>
+                    즐겨보세요.
+                </div>
+                <div class="magazin_btns d-flex">
+                    <div class="magazin-button-prev"></div>
+                    <div class="magazin-button-next"></div>
+                </div>
+            </div>
+            <div class="wrap_thumb_layout">
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_long.jpg" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_long.jpg" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_long.jpg" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_long.jpg" alt=""></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container"><img src="./img/image/magazin_long.jpg" alt=""></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+
+    <!-- yena : youtube -->
+    <div class="youtube p100">
+        <div class="container">
+            <div class="main_tit">소슬 SNS</div>
+            <section class="swiper youtuber">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WhIf5Rrxgek?si=Gdtv55oKyMMgl0f3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="basic_txt gray1">난로 바꾸는 맛에 장박합니다 </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WhIf5Rrxgek?si=Gdtv55oKyMMgl0f3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="basic_txt gray1">난로 바꾸는 맛에 장박합니다 </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WhIf5Rrxgek?si=Gdtv55oKyMMgl0f3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="basic_txt gray1">난로 바꾸는 맛에 장박합니다 </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WhIf5Rrxgek?si=Gdtv55oKyMMgl0f3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="basic_txt gray1">난로 바꾸는 맛에 장박합니다 </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WhIf5Rrxgek?si=Gdtv55oKyMMgl0f3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="basic_txt gray1">난로 바꾸는 맛에 장박합니다 </div>
+                    </div>
+                </div>
+            </section>
+            <div class="youtube_btns">
+                <div class="youtube-button-prev"></div>
+                <div class="youtube-button-next"></div>
+            </div>
+        </div>
+    </div>
+   <!--// yena  -->
+
+
+   <script>
+    const swiper_youtuber = new Swiper(".youtuber", {
+        slidesPerView: "auto",
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        freeMode: false,
+        autoHeight : true,
+        loop: true,
+        loopAdditionalSlides: 1,
+        navigation: {
+            nextEl: ".youtube-button-next",
+            prevEl: ".youtube-button-prev",
+        },
+    });
+
+    const swiper_con = new Swiper(".conSwiper1", {
+       slidesPerView: "auto",
+       centeredSlides: true, 
+       autoplay: {
+           delay: 5000,
+           disableOnInteraction: false,
+       },
+       freeMode: false,
+       autoHeight : true,
+       loop: true,
+       loopAdditionalSlides: 1,
+       navigation: {
+           nextEl: ".hotspot-button-next",
+           prevEl: ".hotspot-button-prev",
+       },
+   });
+
+var swiperTopNum = document.querySelectorAll('.gallery-top .swiper-slide');
+var swiperSubNum = document.querySelectorAll('.gallery-thumbs .gallery-thumbs');
+
+
+   const galleryTop = new Swiper('.gallery-top', {
+       spaceBetween: 10,	//슬라이드 간격
+       autoplay: {
+           delay: 7000,
+           disableOnInteraction: false,
+       },
+       loop: true,	//슬라이드 반복
+       loopedSlides: swiperTopNum.length	//loop 시 파라미터 duplicate 개수 - 정적으로 숫자 4 표현 가능
+   });
+
+   var galleryThumbs = new Swiper('.gallery-thumbs', {
+       spaceBetween: 0,	//슬라이드 간격
+       navigation: {	//네비게이션 사용자 설정
+           nextEl: '.magazin-button-next',	//다음 버튼 클래스 설정
+           prevEl: '.magazin-button-prev',	//이전 버튼 클래스 설정
+       },
+       centeredSlides: true,	//슬라이드 중앙 배치
+       slidesPerView: 'auto',	//한번에 보여지는 슬라이드 개수(auto 가능)
+       touchRatio: 0.2,	//드래그 비율 설정(기본값: 1, 기본값을 0으로 설정할 경우 드래그 불가능)
+       slideToClickedSlide: true,	//슬라이드가 여러개 나열되어 있을 경우, 클릭 시 해당 슬라이드 위치로 이동
+       loop: true,	//슬라이드 반복
+       loopedSlides: swiperSubNum.length //loop 시 파라미터 duplicate 개수 - 정적으로 숫자 4 표현 가능
+   });
+
+   galleryTop.controller.control = galleryThumbs;
+   galleryThumbs.controller.control = galleryTop;
+</script>
+
+
+    
+        <!-- 제이쿼리 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
 </body>
-</html>
+</html>     
