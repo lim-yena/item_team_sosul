@@ -1,21 +1,4 @@
 
-header#hd h1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 34px;
-}
-header#hd h1{
-    margin: 0;
-}
-header#hd ul{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 0;
-    margin: 0;
-}
 .bg-orange{
     background-color: #d68b30;
 }
