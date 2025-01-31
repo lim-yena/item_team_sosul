@@ -18,15 +18,15 @@
     line-height:2;
 }
 
-.video-container {
+.youtube-container {
     position:relative;
     height:0;
     padding-bottom:56.25%;
     border-radius:10px;
     overflow: hidden;
-  }
+}
   
-.video-container iframe {
+.youtube-container iframe {
     position:absolute;
     top:0;
     left:0;
