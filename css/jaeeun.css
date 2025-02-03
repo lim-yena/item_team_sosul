@@ -58,6 +58,9 @@
 .h25{
     height: 25px;
 }
+.h23{
+    height: 23px;
+}
 .w1920{
     width: 1920px;
 }
@@ -79,6 +82,15 @@
 .w384{
     width: 384px;
 }
+.w284{
+    width: 284px;
+}
+.w283{
+    width: 283px;
+}
+.w205{
+    width: 205px;
+}
 .w4{
     width: 25%;
     border-radius: 10px;
@@ -92,25 +104,32 @@
     background-image: url(../img/image/image1.jpg);
     width: 284px;
     height: 200px;
+    margin-left: -120px;
+    margin-bottom: 111px;
+    
     
 }
 #img2{
     background-image: url(../img/image/image2.jpg);
     width: 284px;
     height: 200px;
-    margin-left: 20px;
     margin-right: 20px;
+    margin-left: -20px;
+    margin-bottom: 111px;
 }
 #img3{
     background-image: url(../img/image/image3.jpg);
     width: 284px;
     height: 200px;
     margin-right: 20px;
+    margin-bottom: 111px;
 }
 #img4{
     background-image: url(../img/image/image4.jpg);
     width: 284px;
     height: 200px;
+    
+    margin-bottom: 111px;
     
 }
 #img5{
@@ -124,12 +143,12 @@
     height: 260px;
     margin-right: 20px;
     margin-left: 20px;
-}#img7{
+}
+#img7{
     background-image: url(../img/image/image7.jpg);
     width: 384px;
     height: 260px;
 }
-
 #onebanner {
     position: relative;
 }
@@ -149,12 +168,20 @@
     position: relative;
     z-index: 1;
 }
-
+#button5 .point_txt{
+    position: relative;
+}
+#fourbanner1 .main_tit{
+    position: relative;
+}
+#threebanner1 .main_tit{
+    position: relative;
+}
 .button1{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 140px;
 }.button2{
     display: flex;
     justify-content: flex-start;
@@ -165,7 +192,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-right: 61px;
+    margin-right: 122px;
 }
 .button4{
     display: flex;
@@ -173,16 +200,85 @@
     align-items: center;
     margin-left: 61px;
 }
-.button7{
-    display: flex;
-    flex-direction: column; /* 요소들을 세로로 배치 */
-    justify-content: space-between;
-    border-radius: 50%;
-    width: 206px;
-    height: 40px;
+.button1:hover rect {
+    fill: #f5f5f5;
+}
+.button2:hover rect {
+    fill: #f5f5f5;
+}
+.button3:hover rect {
+    fill: #f5f5f5;
+}
+.button4:hover rect {
+    fill: #f5f5f5;
+}
+#button5{
     background-color: white;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    color: #d68b30;
+    border: none;
+    padding: 15px 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.name1{
+    width: 284px;
+    height: 111px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 200px;
+  
+}
+
+.name2{
+    width: 384px;
+    height: 111px;
+    background-color: #faf6f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 260px;
+  
+}
+.location-box {
+    margin-top: 20px;
+    display: flex;
+    color: #d68b30;
+}
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.hashtags {
+    display: flex;
+    gap: 5px;
+}
+.hashtag {
+    background-color: #f5f0ea;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #666;
+}
+.view-all-btn {
+    width: 92px;
+    height: 29px;
+    border: 1px solid #dddddd;
+    background-color: transparent;
+    color: #777777;
+    text-align: center;
+    line-height: 29px;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 100px;
+    margin-left: 1505px;
+}
+.view-all-btn:hover {
+    background-color: #f5f5f5;
 }
