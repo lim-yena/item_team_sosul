@@ -32,6 +32,12 @@
     .main_tit {
         text-align: center;
     }
+
+    .container {
+        @media (max-width:991px) {
+            width:100%;
+        }
+    }
   
     .conSwiper1 {
         height: 405px;
@@ -166,6 +172,7 @@
   
 /* 매거진 관련 스타일 */
 .magazin {
+
     .point_txt {
         padding-bottom: 0.625rem;
     }
@@ -193,6 +200,9 @@
                 opacity: 0;
             }
         }
+        @media (max-width:991px) {
+            padding:40px 0;
+        }
        
     }
 
@@ -205,6 +215,16 @@
     .gallery-top {
         width: 100%;
         max-width: 21.25rem;
+        @media (max-width:991px) {
+            & .swiper-slide {
+                height:80px;
+            }
+        }
+        @media (max-width:480px) {
+            & .swiper-slide {
+                height:60px;
+            }
+        }
     }
   
     .gallery-thumbs {
@@ -215,6 +235,12 @@
     .gallery-thumbs, .gallery-top {
         overflow: hidden;
         border-radius: 10px;
+        @media (max-width:991px) {
+            max-width:100%;
+            img {
+                width:100%;
+            }
+        }
     }
   
     .magazin-button-next, .magazin-button-prev {
@@ -246,6 +272,10 @@
 .youtube {
     .container {
         padding: 0 6rem;
+        @media (max-width:991px) {
+            padding:0;
+            width:100%;
+        }
     }
   
     .main_tit {
@@ -257,39 +287,57 @@
     }
   
     .swiper-slide {
-      width: 23.5%;
-      margin-right: 2%;
+      max-width: 294px;
+      margin-right: 1.5rem;
+      @media (max-width:991px) {
+            max-width:100%;
+            padding:0 100px;
+            margin-right: -165px;
+      }
+      @media (max-width:480px) {
+        max-width:100%;
+        padding:0 40px;
+        margin-right: -60px;
+  }
   
       &:last-child {
         margin-right: 0;
       }
     }
-  
-    .youtube-button-next, .youtube-button-prev {
-      width: 3.75rem;
-      height: 3.75rem;
-      border-radius: 0.625rem;
-      position: absolute;
-      top: 50%;
+
+    .youtube_btns {
+        @media (max-width:991px) {
+            display:none;
+        }
+
+        & .youtube-button-next, .youtube-button-prev {
+          width: 3.75rem;
+          height: 3.75rem;
+          border-radius: 0.625rem;
+          position: absolute;
+          top: 50%;
+        }
+    
+        & .youtube-button-next {
+          background: url('../img/icon/arrow_right.svg') no-repeat;
+          background-position: center;
+          background-size: cover;
+          right: 0;
+        }
+    
+        & .youtube-button-prev {
+          background: url('../img/icon/arrow_left.svg') no-repeat;
+          background-position: center;
+          background-size: cover;
+          margin-right: 0.313rem;
+          left: 0;
+        }
+    
+        & .youtube-button-next::after, .youtube-button-prev::after {
+          display: none;
+        }
     }
   
-    .youtube-button-next {
-      background: url('../img/icon/arrow_right.svg') no-repeat;
-      background-position: center;
-      background-size: cover;
-      right: 0;
-    }
-  
-    .youtube-button-prev {
-      background: url('../img/icon/arrow_left.svg') no-repeat;
-      background-position: center;
-      background-size: cover;
-      margin-right: 0.313rem;
-      left: 0;
-    }
-  
-    .youtube-button-next::after, .youtube-button-prev::after {
-      display: none;
-    }
+    
 }
   
