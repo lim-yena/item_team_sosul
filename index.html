@@ -69,18 +69,36 @@
     <header id="hd" class="d-flex">
         <div class="container_full d-flex jcb aic">
             <h1 class="order-1"><a href=""><img src="./img/logo/logo.svg" alt=""></a></h1>
-            <button class="d-lg-none">햄버거</button> 
-            <ul id="gnb" class="d-none d-lg-flex order-0 gap-3">
+
+            <button class="Category-btn d-lg-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
+                    <line x1="3" y1="5.4" x2="17" y2="5.4" stroke="#3F422F" stroke-width="1.2"/>
+                    <line x1="3" y1="10.0667" x2="17" y2="10.0667" stroke="#3F422F" stroke-width="1.2"/>
+                    <line x1="3" y1="14.7333" x2="17" y2="14.7333" stroke="#3F422F" stroke-width="1.2"/>
+                </svg>
+            </button> 
+
+            <ul id="gnb" class="d-none d-lg-flex order-0 gap-3"> 
                 <li><a href="" class="text-nowrap">예약하기</a></li>
                 <li><a href="" class="text-nowrap">오직여기</a></li>
                 <li><a href="" class="text-nowrap">프로모션</a></li>
                 <li><a href="" class="text-nowrap">브랜드</a></li>
             </ul>
+
             <ul class="util d-flex order-2 text-nowrap aic gap-lg-5 gap-2">
-                <li class="d-lg-none">돋보기</li>
                 <li>
                     <a href="" class="text-nowrap">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.5314 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.4199 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.2458 10.5493L10.3019 13.3754L8.47086 11.806" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <span class="d-none d-lg-inline">예약하기</span></a></li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
                             <path d="M19.5 11V6" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                             <path d="M7.23251 10.9999H10.047L5.77351 1L1.5 10.9999H4.31452L5.77351 7.5861L7.23251 10.9999Z" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                             <path d="M4.31592 11H7.23391" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
@@ -89,14 +107,6 @@
                             <path d="M14.2954 3.46313L12.9244 4.85493L11.5482 3.46313L10.1719 4.85493L8.79572 3.46313L7.42468 4.85493L10.0478 10.9999H19.4795L16.4994 4.01985L15.6716 4.85493L14.2954 3.46313Z" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                             <path d="M10.046 11V6" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                         </svg>
-                    <span class="d-none d-lg-inline">예약하기</span></a></li>
-                <li><a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M7.5314 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.4199 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.2458 10.5493L10.3019 13.3754L8.47086 11.806" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
                     <span class="d-none d-lg-inline">로그인</span>
                 </a></li>
             </ul>
@@ -128,12 +138,12 @@
     <!--// eunjeong video -->
 
     <!-- eunjeong search -->
-    <div class="search-box jcb aic">
+    <div class="search-box d-flex aic jcb">
         <svg xmlns="http://www.w3.org/2000/svg" width="1435" height="80" viewBox="0 0 1435 80" fill="none">
             <path d="M0 0H1435L1398.51 60.6284C1391.27 72.6491 1378.27 80 1364.24 80H70.7646C56.7343 80 43.7296 72.6491 36.494 60.6284L0 0Z" fill="white"/>
         </svg>
     </div>
-    <div class="search-container d-flex aic"> 
+    <div class="search-container d-none d-lg-flex aic"> 
         <div class="topwhere">어디갈까요? 
             <button class="d-flex aic">
              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -892,8 +902,7 @@
 
 </script>
 
-
-
+<script src="./js/ej.js"></script>
         
 </body>
 </html>     

@@ -43,6 +43,12 @@
     color: #D68B30;
 }
 
+.Category-btn{
+    border : none;
+    background-color: #FFF;
+}
+
+
 .top-logo {
     position: absolute;
     right: 831px;
@@ -244,3 +250,23 @@ a {
     color: #FFF;
     background-color: #3F422F;
 }
+
+h1 a img {
+    max-width: 120px; /* 기본 크기 */
+    height: auto;
+    transition: all 0.3s ease; /* 부드러운 변화 효과 */}
+
+@media (max-width: 991px) {
+    h1 a img {
+        width: 91px;
+    }
+
+    .search-box {
+        top: 8%; /* 상단에 딱 붙이기 */
+        /* max-width: 250px; 원하는 크기로 줄임 */
+        height: 5px;      /* 원하는 높이로 조정 */
+        width:95%;
+    }
+
+}
+    
