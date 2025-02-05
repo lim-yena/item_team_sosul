@@ -268,5 +268,10 @@ h1 a img {
         width:95%;
     }
 
+    .video-bg video {
+        width: 100%;  /* 화면 너비의 80% */
+        height: auto; /* 비율 유지 */
+        max-height: 80vh;
+    }
 }
     
