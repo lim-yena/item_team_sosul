@@ -65,7 +65,7 @@ dl, ol, ul {
   font-size: var(--point_txt, 0.75rem);
 }
 
-.organic {
+.organic_bg {
   color: var(--main_color, rgb(63, 66, 47));
 }
 
