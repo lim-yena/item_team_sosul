@@ -1,0 +1,174 @@
+// Main Styles
+.main_con {
+    .container {
+        padding: 0 6rem;
+        @media (max-width:991px) {
+            padding:0;
+        }
+    }
+  
+    .tit {
+        text-align: center;
+        position: relative;
+        .point_txt {
+            padding-bottom:0.625rem;
+            @media (max-width:991px) {
+                text-align:left;
+            }
+        }
+
+        .main_tit {
+            @media (max-width:991px) {
+                text-align:left;
+            }
+        }
+    }
+
+  
+    .all-btn {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        padding: 5px 25px;
+        background: none;
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        @media (max-width:991px) {
+                display:none;
+        }
+  
+      &:hover {
+            background-color: rgb(221, 221, 221);
+      }
+    }
+  
+    .con_txt {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+  
+        .price {
+            font-weight: 700;
+      }
+  
+        .percent {
+            margin-right: 5px;
+      }
+    }
+  
+    .con_img {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .check_btn {
+        display: none;
+    }
+  }
+  
+    // Main Con Four Styles
+    .main_con_four {
+        .percent {
+            color: #6c7734;
+        }
+    
+        .swiper-slide {
+            max-width: 297px;
+            margin-right: 20px;
+        }
+    
+        .now-button-next,
+        .now-button-prev {
+            width: 3.75rem;
+            height: 3.75rem;
+            border-radius: 0.625rem;
+            position: absolute;
+            top: 50%;
+            @media (max-width:991px) {
+                display:none;
+            }
+        }
+    
+        .now-button-next {
+            background: url("../img/icon/arrow_right.svg") no-repeat;
+            background-position: center;
+            background-size: cover;
+            right: 0;
+        }
+    
+        .now-button-prev {
+            background: url("../img/icon/arrow_left.svg") no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: -0.313rem;
+            left: 0;
+        }
+    
+        .now-button-next::after,
+        .now-button-prev::after {
+            display: none;
+        }
+    
+        .con_img_box {
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+  
+    // Main Con Three Styles
+    .main_con_three {
+            background: #faf6f3;
+    
+        .all-btn {
+            border: 1px solid #c3b8ab;
+            color: #9c8972;
+        }
+    
+        .swiper-slide {
+            max-width: 403px;
+            margin-right: 20px;
+    
+        &:last-child {
+                margin-right: 0;
+        }
+        }
+    
+        .con_img_box {
+            height: 260px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    
+        .here-button-next,
+        .here-button-prev {
+            width: 3.75rem;
+            height: 3.75rem;
+            border-radius: 0.625rem;
+            position: absolute;
+            top: 50%;
+            @media (max-width:991px) {
+                display:none;
+            }
+        }
+    
+        .here-button-next {
+            background: url("../img/icon/arrow_right.svg") no-repeat;
+            background-position: center;
+            background-size: cover;
+            right: 0;
+        }
+    
+        .here-button-prev {
+            background: url("../img/icon/arrow_left.svg") no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: -0.313rem;
+            left: 0;
+        }
+    
+        .here-button-next::after,
+        .here-button-prev::after {
+            display: none;
+        }
+    }
