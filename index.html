@@ -66,21 +66,39 @@
 <body> 
 
     <!-- eunjeong header -->
-    <header id="hd" class="d-flex">
+    <header id="hd" class="d-flex white">
         <div class="container_full d-flex jcb aic">
-            <h1 class="order-1"><a href=""><img src="./img/logo/logo.svg" alt="소슬"></a></h1>
-            <button class="d-lg-none">햄버거</button>
-            <ul id="gnb" class="d-none d-lg-flex order-0 gap-3">
+            <h1 class="order-1"><a href=""><img src="./img/logo/logo.svg" alt=""></a></h1>
+
+            <button class="Category-btn d-lg-none white bg-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20" fill="none">
+                    <line x1="3" y1="5.4" x2="17" y2="5.4" stroke="#3F422F" stroke-width="1.2"/>
+                    <line x1="3" y1="10.0667" x2="17" y2="10.0667" stroke="#3F422F" stroke-width="1.2"/>
+                    <line x1="3" y1="14.7333" x2="17" y2="14.7333" stroke="#3F422F" stroke-width="1.2"/>
+                </svg>
+            </button> 
+
+            <ul id="gnb" class="d-none d-lg-flex order-0 gap-3 organic"> 
                 <li><a href="" class="text-nowrap">예약하기</a></li>
                 <li><a href="" class="text-nowrap">오직여기</a></li>
                 <li><a href="" class="text-nowrap">프로모션</a></li>
                 <li><a href="" class="text-nowrap">브랜드</a></li>
             </ul>
-            <ul class="util d-flex order-2 text-nowrap aic gap-lg-5 gap-2">
-                <li class="d-lg-none">돋보기</li>
+
+            <ul class="util d-flex order-2 text-nowrap aic gap-lg-5 gap-2 point_txt organic">
                 <li>
                     <a href="" class="text-nowrap">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.5314 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.4199 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.2458 10.5493L10.3019 13.3754L8.47086 11.806" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <span class="d-none d-lg-inline">예약하기</span></a></li>
+                <li>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
                             <path d="M19.5 11V6" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                             <path d="M7.23251 10.9999H10.047L5.77351 1L1.5 10.9999H4.31452L5.77351 7.5861L7.23251 10.9999Z" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                             <path d="M4.31592 11H7.23391" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
@@ -89,14 +107,6 @@
                             <path d="M14.2954 3.46313L12.9244 4.85493L11.5482 3.46313L10.1719 4.85493L8.79572 3.46313L7.42468 4.85493L10.0478 10.9999H19.4795L16.4994 4.01985L15.6716 4.85493L14.2954 3.46313Z" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                             <path d="M10.046 11V6" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                         </svg>
-                    <span class="d-none d-lg-inline">예약하기</span></a></li>
-                <li><a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M7.5314 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.4199 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.2458 10.5493L10.3019 13.3754L8.47086 11.806" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
                     <span class="d-none d-lg-inline">로그인</span>
                 </a></li>
             </ul>
@@ -128,14 +138,14 @@
     <!--// eunjeong video -->
 
     <!-- eunjeong search -->
-    <div class="search-box jcb aic">
+    <div class="search-box d-flex aic jcb d-none d-lg-flex ">
         <svg xmlns="http://www.w3.org/2000/svg" width="1435" height="80" viewBox="0 0 1435 80" fill="none">
             <path d="M0 0H1435L1398.51 60.6284C1391.27 72.6491 1378.27 80 1364.24 80H70.7646C56.7343 80 43.7296 72.6491 36.494 60.6284L0 0Z" fill="white"/>
         </svg>
     </div>
-    <div class="search-container d-flex aic"> 
-        <div class="topwhere">어디갈까요? 
-            <button class="d-flex aic">
+    <div class="search-container d-none d-lg-flex aic basic_txt white"> 
+        <div class="topwhere basic_txt organic">어디갈까요? 
+            <button class="d-flex aic point_txt">
              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                 <path d="M19.4253 8.4061C19.4253 4.45249 16.0986 1.29641 12.1646 1.73486C9.18381 2.0637 6.77338 4.50541 6.40538 7.55943C6.19194 9.32835 6.65562 10.9763 7.55723 12.2803L11.9622 19.3447C12.4186 19.9985 13.3643 19.9985 13.8206 19.3447L18.2256 12.2803C18.9801 11.1842 19.429 9.84995 19.429 8.4061H19.4253Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12.8889 11.1279C14.5087 11.1279 15.8218 9.77921 15.8218 8.11548C15.8218 6.45175 14.5087 5.10303 12.8889 5.10303C11.269 5.10303 9.95587 6.45175 9.95587 8.11548C9.95587 9.77921 11.269 11.1279 12.8889 11.1279Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -144,8 +154,8 @@
             지역을 선택하세요.
             </button>
         </div> 
-        <div class="topwhen">언제갈까요?
-            <button class="d-flex aic">
+        <div class="topwhen basic_txt organic">언제갈까요?
+            <button class="d-flex aic point_txt">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M23 3.86963H1V23.0001H23V3.86963Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M1 9.60864H23" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -161,13 +171,19 @@
                 <path d="M1 21L21 1M1 1L21 21" stroke="#3F422F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
-        <button class="search-btn d-flex jic aic">검색</button>
+        <button class="search-btn d-flex jic aic basic_txt white">
+            <span>검색</span>
+        </button>
     </div>
+
+     
+
+
     <!--// eunjeong search -->
 
     <!-- eunjeong quick -->
-    <div class="quick-menu">
-        <button class="quick-btn btn-reserve">
+    <div class="quick-menu d-none d-lg-flex point_txt">
+        <button class="quick-btn btn-reserve organic">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -175,9 +191,9 @@
                 <path d="M13.4199 3V5.82609" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M13.2458 10.5493L10.3019 13.3754L8.47086 11.806" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            예약확인
+            <span>예약확인</span>
         </button>
-        <button class="quick-btn btn-chat">
+        <button class="quick-btn btn-chat organic">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path d="M17.6025 16.8001C14.6904 16.8001 12.2705 14.9007 11.5459 12.3334H8.45605C4.9834 12.3334 2.16699 15.0317 2.16699 18.3588V18.9614C2.16699 22.2885 4.9834 24.9868 8.45605 24.9868L6.8291 29.8334L14.54 24.9868H16.8779C20.3506 24.9868 23.167 22.2885 23.167 18.9614V18.8304L19.9268 16.787H17.6025V16.8001Z" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M16.1072 17.312L12.2241 21.0291C12.0965 21.1512 11.8698 21.1512 11.7422 21.0291L9.9707 19.3333" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round"/>
@@ -185,23 +201,23 @@
                 <path d="M20.0898 8.99613C20.0898 7.95156 20.9685 7.11047 22.0598 7.11047C23.151 7.11047 24.0297 7.95156 24.0297 8.99613C24.0297 10.0407 23.151 10.8818 22.0598 10.8818V12.0213" stroke="#3F422F" stroke-width="1.56" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M22.127 15.345C22.6102 15.345 23.002 14.9532 23.002 14.47C23.002 13.9867 22.6102 13.595 22.127 13.595C21.6437 13.595 21.252 13.9867 21.252 14.47C21.252 14.9532 21.6437 15.345 22.127 15.345Z" fill="#3F422F"/>
             </svg>
-            고객센터
+            <span>고객센터</span>
         </button>
-        <button class="quick-btn btn-log">
+        <button class="quick-btn btn-log organic">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path d="M12.8739 22.4333V28.6102" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M23.4783 16.3592C23.113 16.2306 22.7217 16.1534 22.3174 16.1534H12.3783C10.513 16.1534 9 17.6461 9 19.4863V28.7131H25.6957V19.4863C25.6957 18.0579 24.7696 16.8354 23.4783 16.3592Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M21.9261 22.4333V28.6102" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M21.2608 9.86059C21.2608 11.9968 19.513 13.7212 17.3478 13.7212C15.1956 13.7212 13.4348 11.9968 13.4348 9.86059C13.4348 7.7244 15.1826 6 17.3478 6C19.5 6 21.2608 7.7244 21.2608 9.86059Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            로그인
+            <span>로그인</span>
         </button>
-        <button class="quick-btn btn-top">
+        <button class="quick-btn btn-top organic_bg white">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path d="M7 22L17.0186 12" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
                 <path d="M17.0186 12L27.0001 22" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
             </svg>
-            TOP
+            <span>TOP</span>
         </button>
     </div>
     <!--// eunjeong quick -->    
@@ -721,6 +737,38 @@
                             <a href="">제품문의</a></li>
                         </div>
                     </div>
+
+                    <ul class="sns">
+                        <li>소슬 SNS</li>
+                        <ul class="sns_icon_box">
+                            <li id="ytube">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                                        <path d="M32.5468 11.0104C31.972 8.63957 30.8998 7.73124 28.9267 7.3999C27.7937 7.2228 22.3331 7 18 7C13.6669 7.00571 8.20634 7.22851 7.07332 7.40561C5.10022 7.73124 4.028 8.64529 3.45873 11.0104C3.26529 11.7988 3 16.1576 3 17.82V18.1857C3 19.8481 3.26529 24.2012 3.45873 24.9953C4.028 27.3604 5.10022 28.2745 7.07332 28.6001C8.20634 28.7772 13.6724 28.9943 18.0111 28.9943L17.9889 29C22.3276 29 27.7881 28.7772 28.9267 28.6001C30.8998 28.2745 31.972 27.3604 32.5468 24.9953C32.7347 24.2012 33 19.8481 33 18.1857V17.82C33 16.1576 32.7347 11.7988 32.5468 11.0104ZM14.402 21.9733V14.0267L21.5925 17.9115L14.402 21.9733Z" fill="#a8abac"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li id="blog">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="26" viewBox="0 0 32 26" fill="none">
+                                        <path d="M24.8033 10.2451C24.129 10.2451 23.5758 10.7876 23.5758 11.4615C23.5758 12.1296 24.129 12.6721 24.8033 12.6721C25.4833 12.6721 26.0308 12.1296 26.0308 11.4615C26.025 10.7876 25.4775 10.2451 24.8033 10.2451Z" fill="#DDDDDD"/>
+                                        <path d="M26.267 0H4.92722C2.20716 0 0 2.19855 0 4.89963V16.5205C0 19.2216 2.2014 21.4202 4.92722 21.4202H12.2806L14.7874 25.4632C14.7874 25.4632 14.8105 25.5146 14.8681 25.5774C15.018 25.8287 15.2888 26 15.6 26C15.9112 26 16.1763 25.8287 16.3261 25.5831C16.3895 25.5089 16.4126 25.4632 16.4126 25.4632L18.9194 21.4202H26.2728C28.9928 21.4202 31.2 19.2273 31.2 16.5205V4.89963C31.1942 2.19855 28.9871 0 26.267 0ZM6.93269 14.3448C5.78013 14.3448 5.32486 13.5282 5.32486 13.5282V14.145H3.39431V6.26444H5.30181V9.26817C6.07403 8.5201 6.92693 8.5201 6.92693 8.5201C9.51444 8.5201 9.61817 11.3982 9.61817 11.3982C9.61817 14.242 6.93269 14.3448 6.93269 14.3448ZM12.9433 14.145H11.0992V9.47946C11.0992 7.8691 10.229 7.90907 10.229 7.90907V6.0817C13.0183 6.0817 12.9376 9.04546 12.9376 9.04546V14.145H12.9433ZM17.4441 14.3448C14.1881 14.3448 14.2861 11.461 14.2861 11.461C14.2861 8.54294 17.4441 8.54294 17.4441 8.54294C20.7808 8.54294 20.6713 11.461 20.6713 11.461C20.6713 14.3391 17.4441 14.3448 17.4441 14.3448ZM27.7999 14.0764C27.7999 17.063 25.0107 17.0288 25.0107 17.0288H24.2673V15.3556H24.7283C26.0826 15.3556 25.9443 13.9736 25.9443 13.9736V13.5339C25.3507 14.2991 24.2673 14.2535 24.2673 14.2535C21.6106 14.2535 21.6395 11.4439 21.6395 11.4439C21.6395 8.42873 24.3422 8.54865 24.3422 8.54865C25.3968 8.54865 25.9443 9.26817 25.9443 9.26817V8.73139H27.7999V14.0764Z" fill="#a8abac"/>
+                                        <path d="M6.50617 10.2451C5.82615 10.2451 5.27869 10.7876 5.27869 11.4615C5.27869 12.1296 5.82615 12.6721 6.50617 12.6721C7.18618 12.6721 7.73366 12.1296 7.73366 11.4615C7.73366 10.7876 7.18618 10.2451 6.50617 10.2451Z" fill="#DDDDDD"/>
+                                        <path d="M17.444 10.2451C16.764 10.2451 16.2166 10.7876 16.2166 11.4615C16.2166 12.1296 16.764 12.6721 17.444 12.6721C18.1241 12.6721 18.6715 12.1296 18.6715 11.4615C18.6715 10.7876 18.1241 10.2451 17.444 10.2451Z" fill="#DDDDDD"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li id="insta">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <path d="M18.4911 0H7.50339C3.35751 0 0 3.35822 0 7.50498V18.495C0 22.6418 3.35751 26 7.50339 26H18.4966C22.6425 26 26 22.6418 26 18.495V7.50498C25.9945 3.35822 22.637 0 18.4911 0ZM23.6018 18.688C23.6018 21.4397 21.369 23.673 18.6179 23.673H7.37107C4.62001 23.673 2.38719 21.4397 2.38719 18.688V7.43881C2.38719 4.68717 4.62001 2.45387 7.37107 2.45387H18.6179C21.369 2.45387 23.6018 4.68717 23.6018 7.43881V18.688Z" fill="#a8abac"/>
+                                        <path d="M12.9947 6.31934C9.26776 6.31934 6.25208 9.34118 6.25208 13.0689C6.25208 16.791 9.26776 19.8129 12.9947 19.8129C16.7215 19.8129 19.7427 16.791 19.7427 13.0689C19.7427 9.34118 16.7215 6.31934 12.9947 6.31934ZM12.9947 17.4417C10.5799 17.4417 8.62273 15.4841 8.62273 13.0689C8.62273 10.6536 10.5799 8.69601 12.9947 8.69601C15.4094 8.69601 17.3666 10.6536 17.3666 13.0689C17.3721 15.4841 15.4149 17.4417 12.9947 17.4417Z" fill="#a8abac"/>
+                                        <path d="M19.9687 4.48828C19.1031 4.48828 18.3975 5.1886 18.3975 6.05986C18.3975 6.93112 19.1031 7.63144 19.9687 7.63144C20.8398 7.63144 21.54 6.93112 21.54 6.05986C21.54 5.19411 20.8398 4.48828 19.9687 4.48828Z" fill="#DDDDDD"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
                 </div>
                 <div class="btm_txt">
                     <div class="btm_txt_in">상호명 (주)소슬 <span>|</span> 대표자 김은정 <span>|</span> 주소 서울특별시 구로구 새말로 97 테크노마트 6F <span>|</span> 전화 0000-0000 <span>|</span> sosul@sosul.com</div>
@@ -951,8 +999,7 @@
 
 </script>
 
-
-
+<script src="./js/ej.js"></script>
         
 </body>
 </html>     
