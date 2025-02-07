@@ -89,7 +89,7 @@ a {
   left: 0;
   right: 0;
   margin: auto;
-  width: 100%;
+  width: calc(100% - 30px);
   border-radius: 0.625rem;
   z-index: -1;
   -webkit-clip-path: inset(0 round 0.625rem);
@@ -245,12 +245,5 @@ h1 a img {
   }
   .video-bg {
     height: 21.875rem;
-  }
-  .video-bg video {
-    width: 90vw;
-    max-width: 100%;
-    height: 21.875rem;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
