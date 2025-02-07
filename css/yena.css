@@ -11,6 +11,10 @@
   line-height: 2;
 }
 
+.point_txt {
+  letter-spacing: -1px;
+}
+
 /* 소슬 띠배너 관련 스타일 */
 .sosul_banner {
   padding: 40px 0;
@@ -65,6 +69,22 @@
   text-align: center;
 }
 @media (max-width: 991px) {
+  .hotspot .main_tit {
+    text-align: left;
+    width: 94%;
+    margin: 0 auto;
+  }
+}
+.hotspot .point_txt {
+  padding-bottom: 0.625rem;
+}
+@media (max-width: 991px) {
+  .hotspot .point_txt {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
   .hotspot .container {
     width: 100%;
   }
@@ -92,6 +112,11 @@
   position: relative;
   transition: all 0.4s ease-in-out;
   box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .hotspot .swiper-slide {
+    margin-right: 1.49rem;
+  }
 }
 .hotspot .swiper-slide::after {
   position: absolute;
@@ -300,6 +325,22 @@
 .youtube .main_tit {
   text-align: center;
 }
+@media (max-width: 991px) {
+  .youtube .main_tit {
+    text-align: left;
+    width: 94%;
+    margin: 0 auto;
+  }
+}
+.youtube .point_txt {
+  padding-bottom: 0.625rem;
+}
+@media (max-width: 991px) {
+  .youtube .point_txt {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
 .youtube .basic_txt {
   padding-top: 0.625rem;
 }
@@ -410,6 +451,9 @@
 .more .sub_tit {
   font-weight: 800;
 }
+.more .point_txt {
+  padding-bottom: 0.625rem;
+}
 .more .same_btn {
   background: none;
   font-weight: 600;
@@ -458,6 +502,7 @@
 @media (max-width: 991px) {
   .footer .btm_menu_box {
     width: 100%;
+    margin: 10px 0;
   }
 }
 .footer .btm_menu_box a {
