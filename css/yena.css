@@ -1,10 +1,14 @@
 @charset "UTF-8";
 /* 기본 스타일 */
 .main_tit {
-  font-size: 2.125rem;
   font-weight: 800;
   padding-bottom: 2.5rem;
   line-height: 1.3;
+}
+@media (max-width: 991px) {
+  .main_tit {
+    padding-bottom: 20px;
+  }
 }
 
 .basic_txt {
@@ -26,6 +30,10 @@
 .sosul_banner .same_btn {
   background: #fff;
   border: none;
+}
+.sosul_banner .same_btn:hover {
+  background: #000;
+  color: #fff;
 }
 .sosul_banner .text-center {
   position: relative;
@@ -118,6 +126,13 @@
     margin-right: 1.49rem;
   }
 }
+@media (max-width: 480px) {
+  .hotspot .swiper-slide {
+    margin-right: 2rem;
+    margin-left: -1rem;
+    max-width: 14.05rem;
+  }
+}
 .hotspot .swiper-slide::after {
   position: absolute;
   content: "";
@@ -133,6 +148,11 @@
   transition: all 0.4s ease-in-out;
   overflow: hidden;
   box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .hotspot .swiper-slide-active {
+    max-width: 17rem;
+  }
 }
 .hotspot .swiper-slide-active::after {
   height: 50%;
@@ -222,12 +242,9 @@
 }
 .magazin .magazin_txt .swiper-slide {
   opacity: 0;
-  transform: translateY(50px); /* 슬라이드가 아래에서 시작하도록 설정 */
-  transition: opacity 0.5s ease 0.2s, transform 1s ease 0.2s; /* 애니메이션 효과 설정 */
 }
 .magazin .magazin_txt .swiper-slide-active {
   opacity: 1;
-  transform: translateY(0); /* 원래 위치로 애니메이션 */
 }
 .magazin .magazin_txt .swiper-slide .swiper-slide-prev {
   opacity: 0;
@@ -364,6 +381,10 @@
 }
 .youtube .swiper-slide:last-child {
   margin-right: 0;
+}
+.youtube .swiper-slide:hover .basic_txt {
+  color: #000;
+  font-weight: 700;
 }
 @media (max-width: 991px) {
   .youtube .youtube_btns {
@@ -517,6 +538,9 @@
     padding: 10px 0;
   }
 }
+.footer .btm_menu_box a:hover {
+  color: #B6996F;
+}
 .footer .btm_logo {
   margin-right: 30px;
 }
@@ -583,7 +607,7 @@
   }
 }
 .footer .sns .icon_area:first-child {
-  margin-left: 0;
+  margin-left: 10px;
 }
 @media (max-width: 991px) {
   .footer .app_down {

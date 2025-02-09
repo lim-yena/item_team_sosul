@@ -87,7 +87,7 @@
 
             <ul class="util d-flex order-2 text-nowrap aic gap-lg-5 gap-2 point_txt organic">
                 <li>
-                    <a href="" class="text-nowrap">
+                    <a href="" class="text-nowrap top_icon">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.9529 4.69562H4V16H16.9529V4.69562Z" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M4 8.08698H16.9529" stroke="#3F422F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -97,7 +97,7 @@
                         </svg>
                     <span class="d-none d-lg-inline">예약하기</span></a></li>
                 <li>
-                    <a href="">
+                    <a href="" class="top_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
                             <path d="M19.5 11V6" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
                             <path d="M7.23251 10.9999H10.047L5.77351 1L1.5 10.9999H4.31452L5.77351 7.5861L7.23251 10.9999Z" stroke="#3F422F" stroke-width="1.2" stroke-linejoin="round"/>
@@ -110,76 +110,72 @@
                     <span class="d-none d-lg-inline">로그인</span>
                 </a></li>
             </ul>
-        </div>       
+        </div>
+        <!-- eunjeong search -->
+        <div class="search-box">
+            <div class="search-container d-none d-lg-flex aic basic_txt white"> 
+                <div class="topwhere basic_txt organic">어디갈까요? 
+                    <button class="d-flex aic point_txt">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path d="M19.4253 8.4061C19.4253 4.45249 16.0986 1.29641 12.1646 1.73486C9.18381 2.0637 6.77338 4.50541 6.40538 7.55943C6.19194 9.32835 6.65562 10.9763 7.55723 12.2803L11.9622 19.3447C12.4186 19.9985 13.3643 19.9985 13.8206 19.3447L18.2256 12.2803C18.9801 11.1842 19.429 9.84995 19.429 8.4061H19.4253Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.8889 11.1279C14.5087 11.1279 15.8218 9.77921 15.8218 8.11548C15.8218 6.45175 14.5087 5.10303 12.8889 5.10303C11.269 5.10303 9.95587 6.45175 9.95587 8.11548C9.95587 9.77921 11.269 11.1279 12.8889 11.1279Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.9072 14.6731H21.4447L24.3887 24.6945H1.38867L4.33267 14.6731H9.05411" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    지역을 선택하세요.
+                    </button>
+                </div> 
+                <div class="topwhen basic_txt organic">언제갈까요?
+                    <button class="d-flex aic point_txt">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M23 3.86963H1V23.0001H23V3.86963Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 9.60864H23" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 1V5.78261" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17 1V5.78261" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.7037 13.7759L11.7037 18.5585L8.59375 15.9025" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        날짜를 선택하세요.
+                    </button>
+                </div>
+                <div class="close-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox    ="0 0 22 22" fill="none" >
+                        <path d="M1 21L21 1M1 1L21 21" stroke="#3F422F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <button class="search-btn d-flex jic aic basic_txt white">
+                    <span>검색</span>
+                </button>
+            </div>
+        </div>
+        <!--// eunjeong search -->    
     </header>
     <!--// eunjeong header -->
 
     <!-- eunjeong video -->
-    <div class="video-container">
-        <div class="video-bg"> 
-            <video autoplay muted loop>
-                <source src="./video/main_video.mp4" type="video/mp4">
-                <!-- Your browser does not support the video tag. -->
-            </video>
-        </div>
-        <div class="video-icon aic">
-            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64" viewBox="0 0 45 64" fill="none">
-                <path d="M22.5 1.12354C26.9184 1.12354 30.5 5.74987 30.5 9.5001L30.5 18.747C30.5 23.3733 26.9184 27.1235 22.5 27.1235C18.0816 27.1235 14.5 22.4972 14.5 18.747L14.5 9.5001C14.5 4.87377 18.0823 1.12354 22.5 1.12354Z" stroke="white" stroke-width="1.5"/>
-                <path d="M22.6874 4.95532C23.4252 4.95532 24.0232 5.71863 24.0232 6.33733L24.0232 9.25708C24.0232 10.0204 23.4252 10.6391 22.6874 10.6391C21.9496 10.6391 21.3516 9.87579 21.3516 9.25708L21.3516 6.33733C21.3516 5.57403 21.9496 4.95532 22.6874 4.95532Z" stroke="white" stroke-width="1.5"/>
-                <path d="M28.3316 17.0257C28.1643 21.317 26.5086 23.0612 23.1912 24.2208M22.788 10.9784L22.788 12.6461M22.788 1.12354L22.788 4.89209M14.9766 14.0531C14.9766 14.0531 19.5284 12.667 22.7168 12.6454C25.9052 12.6239 30.4986 14.0531 30.4986 14.0531" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M27.3271 41.2959L22.4906 46.1235" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                <path d="M22.4893 46.1235L17.6706 41.2959" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                <path d="M27.3291 36.1235L22.4926 40.9511" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                <path d="M22.4932 40.9511L17.6745 36.1235" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
-                <path d="M5.40234 56.9712C5.33203 56.2446 4.71094 55.8228 3.79688 55.8228C2.83594 55.8228 2.25 56.2915 2.25 56.9243C2.25 57.6392 3 57.9321 3.70312 58.0962L4.5 58.3071C5.76562 58.6001 6.98438 59.2681 6.98438 60.7446C6.98438 62.2329 5.8125 63.2524 3.77344 63.2524C1.79297 63.2524 0.550781 62.3032 0.480469 60.6274H1.98047C2.05078 61.5181 2.80078 61.9517 3.76172 61.9517C4.76953 61.9517 5.46094 61.4595 5.46094 60.7329C5.46094 60.0649 4.83984 59.7837 3.92578 59.5493L2.96484 59.3032C1.57031 58.9399 0.703125 58.2368 0.703125 57.0181C0.703125 55.5181 2.03906 54.522 3.82031 54.522C5.625 54.522 6.84375 55.5415 6.86719 56.9712H5.40234ZM13.7288 57.4985C13.553 56.479 12.7327 55.8931 11.7014 55.8931C10.3069 55.8931 9.33422 56.9595 9.33422 58.8813C9.33422 60.8267 10.3186 61.8696 11.7014 61.8696C12.7092 61.8696 13.5295 61.3071 13.7288 60.311H15.2639C15.0295 61.9399 13.6936 63.2407 11.678 63.2407C9.43969 63.2407 7.79906 61.6118 7.79906 58.8813C7.79906 56.1392 9.46313 54.522 11.678 54.522C13.553 54.522 15.0061 55.6118 15.2639 57.4985H13.7288ZM16.3364 63.1235V54.6392H19.5239C21.4692 54.6392 22.5122 55.729 22.5122 57.3462C22.5122 58.5005 21.9848 59.356 20.9888 59.7603L22.8169 63.1235H21.1177L19.4536 60.0181H17.8598V63.1235H16.3364ZM17.8598 58.7407H19.2895C20.438 58.7407 20.9536 58.2485 20.9536 57.3462C20.9536 56.4438 20.438 55.9165 19.2895 55.9165H17.8598V58.7407ZM31.155 58.8813C31.155 61.6235 29.4909 63.2407 27.2644 63.2407C25.0378 63.2407 23.3738 61.6118 23.3738 58.8813C23.3738 56.1392 25.0378 54.522 27.2644 54.522C29.4909 54.522 31.155 56.1392 31.155 58.8813ZM29.6198 58.8813C29.6198 56.9478 28.6472 55.8931 27.2644 55.8931C25.8816 55.8931 24.9089 56.9478 24.9089 58.8813C24.9089 60.8149 25.8816 61.8696 27.2644 61.8696C28.6472 61.8696 29.6198 60.8149 29.6198 58.8813ZM32.2744 63.1235V54.6392H33.7978V61.8345H37.5478V63.1235H32.2744ZM38.5266 63.1235V54.6392H40.05V61.8345H43.8V63.1235H38.5266Z" fill="white"/>
-            </svg>
+    <div class="container_full">
+        <div class="video-container ">
+            <div class="video-bg"> 
+                <video autoplay muted loop>
+                    <source src="./video/main_video.mp4" type="video/mp4">
+                    <!-- Your browser does not support the video tag. -->
+                </video>
+            </div>
+            <div class="video-icon aic">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="64" viewBox="0 0 45 64" fill="none">
+                    <path d="M22.5 1.12354C26.9184 1.12354 30.5 5.74987 30.5 9.5001L30.5 18.747C30.5 23.3733 26.9184 27.1235 22.5 27.1235C18.0816 27.1235 14.5 22.4972 14.5 18.747L14.5 9.5001C14.5 4.87377 18.0823 1.12354 22.5 1.12354Z" stroke="white" stroke-width="1.5"/>
+                    <path d="M22.6874 4.95532C23.4252 4.95532 24.0232 5.71863 24.0232 6.33733L24.0232 9.25708C24.0232 10.0204 23.4252 10.6391 22.6874 10.6391C21.9496 10.6391 21.3516 9.87579 21.3516 9.25708L21.3516 6.33733C21.3516 5.57403 21.9496 4.95532 22.6874 4.95532Z" stroke="white" stroke-width="1.5"/>
+                    <path d="M28.3316 17.0257C28.1643 21.317 26.5086 23.0612 23.1912 24.2208M22.788 10.9784L22.788 12.6461M22.788 1.12354L22.788 4.89209M14.9766 14.0531C14.9766 14.0531 19.5284 12.667 22.7168 12.6454C25.9052 12.6239 30.4986 14.0531 30.4986 14.0531" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M27.3271 41.2959L22.4906 46.1235" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M22.4893 46.1235L17.6706 41.2959" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M27.3291 36.1235L22.4926 40.9511" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M22.4932 40.9511L17.6745 36.1235" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                    <path d="M5.40234 56.9712C5.33203 56.2446 4.71094 55.8228 3.79688 55.8228C2.83594 55.8228 2.25 56.2915 2.25 56.9243C2.25 57.6392 3 57.9321 3.70312 58.0962L4.5 58.3071C5.76562 58.6001 6.98438 59.2681 6.98438 60.7446C6.98438 62.2329 5.8125 63.2524 3.77344 63.2524C1.79297 63.2524 0.550781 62.3032 0.480469 60.6274H1.98047C2.05078 61.5181 2.80078 61.9517 3.76172 61.9517C4.76953 61.9517 5.46094 61.4595 5.46094 60.7329C5.46094 60.0649 4.83984 59.7837 3.92578 59.5493L2.96484 59.3032C1.57031 58.9399 0.703125 58.2368 0.703125 57.0181C0.703125 55.5181 2.03906 54.522 3.82031 54.522C5.625 54.522 6.84375 55.5415 6.86719 56.9712H5.40234ZM13.7288 57.4985C13.553 56.479 12.7327 55.8931 11.7014 55.8931C10.3069 55.8931 9.33422 56.9595 9.33422 58.8813C9.33422 60.8267 10.3186 61.8696 11.7014 61.8696C12.7092 61.8696 13.5295 61.3071 13.7288 60.311H15.2639C15.0295 61.9399 13.6936 63.2407 11.678 63.2407C9.43969 63.2407 7.79906 61.6118 7.79906 58.8813C7.79906 56.1392 9.46313 54.522 11.678 54.522C13.553 54.522 15.0061 55.6118 15.2639 57.4985H13.7288ZM16.3364 63.1235V54.6392H19.5239C21.4692 54.6392 22.5122 55.729 22.5122 57.3462C22.5122 58.5005 21.9848 59.356 20.9888 59.7603L22.8169 63.1235H21.1177L19.4536 60.0181H17.8598V63.1235H16.3364ZM17.8598 58.7407H19.2895C20.438 58.7407 20.9536 58.2485 20.9536 57.3462C20.9536 56.4438 20.438 55.9165 19.2895 55.9165H17.8598V58.7407ZM31.155 58.8813C31.155 61.6235 29.4909 63.2407 27.2644 63.2407C25.0378 63.2407 23.3738 61.6118 23.3738 58.8813C23.3738 56.1392 25.0378 54.522 27.2644 54.522C29.4909 54.522 31.155 56.1392 31.155 58.8813ZM29.6198 58.8813C29.6198 56.9478 28.6472 55.8931 27.2644 55.8931C25.8816 55.8931 24.9089 56.9478 24.9089 58.8813C24.9089 60.8149 25.8816 61.8696 27.2644 61.8696C28.6472 61.8696 29.6198 60.8149 29.6198 58.8813ZM32.2744 63.1235V54.6392H33.7978V61.8345H37.5478V63.1235H32.2744ZM38.5266 63.1235V54.6392H40.05V61.8345H43.8V63.1235H38.5266Z" fill="white"/>
+                </svg>
+            </div>
         </div>
     </div>
     <!--// eunjeong video -->
 
-    <!-- eunjeong search -->
-    <div class="search-box d-flex aic jcb d-none d-lg-flex ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1435" height="80" viewBox="0 0 1435 80" fill="none">
-            <path d="M0 0H1435L1398.51 60.6284C1391.27 72.6491 1378.27 80 1364.24 80H70.7646C56.7343 80 43.7296 72.6491 36.494 60.6284L0 0Z" fill="white"/>
-        </svg>
-    </div>
-    <div class="search-container d-none d-lg-flex aic basic_txt white"> 
-        <div class="topwhere basic_txt organic">어디갈까요? 
-            <button class="d-flex aic point_txt">
-             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-                <path d="M19.4253 8.4061C19.4253 4.45249 16.0986 1.29641 12.1646 1.73486C9.18381 2.0637 6.77338 4.50541 6.40538 7.55943C6.19194 9.32835 6.65562 10.9763 7.55723 12.2803L11.9622 19.3447C12.4186 19.9985 13.3643 19.9985 13.8206 19.3447L18.2256 12.2803C18.9801 11.1842 19.429 9.84995 19.429 8.4061H19.4253Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12.8889 11.1279C14.5087 11.1279 15.8218 9.77921 15.8218 8.11548C15.8218 6.45175 14.5087 5.10303 12.8889 5.10303C11.269 5.10303 9.95587 6.45175 9.95587 8.11548C9.95587 9.77921 11.269 11.1279 12.8889 11.1279Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M16.9072 14.6731H21.4447L24.3887 24.6945H1.38867L4.33267 14.6731H9.05411" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            지역을 선택하세요.
-            </button>
-        </div> 
-        <div class="topwhen basic_txt organic">언제갈까요?
-            <button class="d-flex aic point_txt">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M23 3.86963H1V23.0001H23V3.86963Z" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M1 9.60864H23" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M7 1V5.78261" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M17 1V5.78261" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M16.7037 13.7759L11.7037 18.5585L8.59375 15.9025" stroke="#3F422F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                날짜를 선택하세요.
-            </button>
-        </div>
-        <div class="close-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox    ="0 0 22 22" fill="none" >
-                <path d="M1 21L21 1M1 1L21 21" stroke="#3F422F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
-        <button class="search-btn d-flex jic aic basic_txt white">
-            <span>검색</span>
-        </button>
-    </div>
-
-     
-
-
-    <!--// eunjeong search -->
+    
 
     <!-- eunjeong quick -->
     <div class="quick-menu d-none d-lg-flex point_txt">
@@ -224,7 +220,7 @@
 
 
 
-    <!-- jeaeun main_con -->
+    <!-- jeaeun four -->
     <div class="main_con main_con_four p100">
         <div class="container">
             <div class="tit">
@@ -239,7 +235,7 @@
                             <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
                             <div class="con_txt">
                                 <div class="location point_txt gray3">지역</div>
-                                <div class="camping basic_txt camping">캠핑장 이름</div>
+                                <div class="camping basic_txt">캠핑장 이름</div>
                                 <div class="won sub_txt gray3">80,000원</div>
                                 <div class="price">
                                     <span class="percent list_tit organic">20%</span>
@@ -256,13 +252,12 @@
                             </div>
                         </div>  
                     </div>
-                
                     <div class="swiper-slide">
                         <div class="con_box">
                             <div class="con_img_box"><img src="./img/image/image2.jpg" alt="캠핑장" class="con_img" /></div>
                             <div class="con_txt">
                                 <div class="location point_txt gray3">지역</div>
-                                <div class="camping basic_txt camping">캠핑장 이름</div>
+                                <div class="camping basic_txt">캠핑장 이름</div>
                                 <div class="won sub_txt gray3">80,000원</div>
                                 <div class="price">
                                     <span class="percent list_tit organic">20%</span>
@@ -284,7 +279,7 @@
                             <div class="con_img_box"><img src="./img/image/image3.jpg" alt="캠핑장" class="con_img" /></div>
                             <div class="con_txt">
                                 <div class="location point_txt gray3">지역</div>
-                                <div class="camping basic_txt camping">캠핑장 이름</div>
+                                <div class="camping basic_txt">캠핑장 이름</div>
                                 <div class="won sub_txt gray3">80,000원</div>
                                 <div class="price">
                                     <span class="percent list_tit organic">20%</span>
@@ -306,7 +301,7 @@
                             <div class="con_img_box"><img src="./img/image/image4.jpg" alt="캠핑장" class="con_img" /></div>
                             <div class="con_txt">
                                 <div class="location point_txt gray3">지역</div>
-                                <div class="camping basic_txt camping">캠핑장 이름</div>
+                                <div class="camping basic_txt">캠핑장 이름</div>
                                 <div class="won sub_txt gray3">80,000원</div>
                                 <div class="price">
                                     <span class="percent list_tit organic">20%</span>
@@ -323,73 +318,37 @@
                             </div>
                         </div>  
                     </div>
-
-                
+                    <div class="swiper-slide">
+                        <div class="con_box">
+                            <div class="con_img_box"><img src="./img/image/image5.jpg" alt="캠핑장" class="con_img" /></div>
+                            <div class="con_txt">
+                                <div class="location point_txt gray3">지역</div>
+                                <div class="camping basic_txt">캠핑장 이름</div>
+                                <div class="won sub_txt gray3">80,000원</div>
+                                <div class="price">
+                                    <span class="percent list_tit organic">20%</span>
+                                    <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                </div>
+                                <div class="review d-flex">
+                                    <span class="star sub_txt gray3">★</span>
+                                    <span class="jum sub_txt gray3">4.8</span>
+                                    <span class="number sub_txt gray3">(124)</span>
+                                </div>
+                                <button class="check_btn sub_txt gray3">
+                                    예약하기
+                                </button>
+                            </div>
+                        </div>  
+                    </div>
                 </div>
             </div>
-            <div class="nowSwiper-pagination"></div>
-                
-            <div class="now-button-prev"></div>
+            <div class="mobile"><div class="swiper-pagination"></div></div>
+            <div class="now-button-prev"></div> 
             <div class="now-button-next"></div> 
+            <button class="mo-all-btn point_txt gray3 d-lg-none">전체보기</button>
         </div>
-
-        <script>
-            const nowswiper = new Swiper(".nowSwiper", {
-                slidesPerView: "auto",
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                freeMode: false,
-                autoHeight : true,
-                loop: true,
-                loopAdditionalSlides: 1,
-                navigation: {
-                    nextEl: ".now-button-next",
-                    prevEl: ".now-button-prev",
-                },
-                grid: {
-                    rows: 2,  // 2줄로 표시
-                },
-                breakpoints: {
-                    // 991px 이하일 때
-                    991: {
-                        slidesPerView: 2,  // 991px 이하에서는 한 번에 2개의 슬라이드를 보여줍니다.
-                        grid: {
-                            rows: 2,  // 2줄로 표시
-                        },
-                    },
-                },
-            });
-
-            // const nowswiper = new Swiper(".nowSwiper", {
-            //     slidesPerView: 1, 
-            //     grid: {
-            //         rows: 2, 
-            //     },
-            //     spaceBetween: 0,
-            //     pagination: {
-            //         type: "",
-            //         el: ".nowSwiper-pagination",
-            //         clickable: true,
-            //     },
-            //     navigation: {
-            //         nextEl: ".swiper-button-next", // 다음 버튼
-            //         prevEl: ".swiper-button-prev", // 이전 버튼
-            //     },
-            //     breakpoints: {
-            
-            //         991: {
-            //             slidesPerView: 4,
-            //             grid: {
-            //                 rows: 1, 
-            //             },
-            //         },
-            //     },
-            // });
-        </script>
     </div>            
-    <!--// jeaeun main_con -->
+    <!--// jeaeun four -->
 
     <!-- jeaeun three -->
     <div class="main_con main_con_three p100">
@@ -399,124 +358,251 @@
                 <div class="main_tit panBlack">소슬에서만 만나는,<br class="d-lg-none"> 오직 여기</div>
                 <button class="all-btn point_txt gray3">전체보기</button>
             </div>
-            <div class="swiper hereSwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="con_box">
-                            <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
-                            <div class="con_txt">
-                                <div class="location point_txt apricot">지역</div>
-                                <div class="camping basic_txt camping">캠핑장 이름</div>
-                                <div class="won sub_txt gray3">80,000원</div>
-                                <div class="price">
-                                    <span class="percent list_tit apricot">20%</span>
-                                    <span class="won2 list_tit panBlack">64,000원 ~</span>  
+            <div class="deskTop">
+                <div class="swiper hereSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt camping">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
                                 </div>
-                                <div class="review d-flex">
-                                    <span class="star sub_txt gray3">★</span>
-                                    <span class="jum sub_txt gray3">4.8</span>
-                                    <span class="number sub_txt gray3">(124)</span>
+                            </div>  
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image5.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt camping">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
                                 </div>
-                                <button class="check_btn sub_txt gray3">
-                                    예약하기
-                                </button>
-                            </div>
-                        </div>  
+                            </div>  
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image6.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt camping">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image7.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt camping">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
                     </div>
-                
-                    <div class="swiper-slide">
-                        <div class="con_box">
-                            <div class="con_img_box"><img src="./img/image/image5.jpg" alt="캠핑장" class="con_img" /></div>
-                            <div class="con_txt">
-                                <div class="location point_txt apricot">지역</div>
-                                <div class="camping basic_txt camping">캠핑장 이름</div>
-                                <div class="won sub_txt gray3">80,000원</div>
-                                <div class="price">
-                                    <span class="percent list_tit apricot">20%</span>
-                                    <span class="won2 list_tit panBlack">64,000원 ~</span>  
-                                </div>
-                                <div class="review d-flex">
-                                    <span class="star sub_txt gray3">★</span>
-                                    <span class="jum sub_txt gray3">4.8</span>
-                                    <span class="number sub_txt gray3">(124)</span>
-                                </div>
-                                <button class="check_btn sub_txt gray3">
-                                    예약하기
-                                </button>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="con_box">
-                            <div class="con_img_box"><img src="./img/image/image6.jpg" alt="캠핑장" class="con_img" /></div>
-                            <div class="con_txt">
-                                <div class="location point_txt apricot">지역</div>
-                                <div class="camping basic_txt camping">캠핑장 이름</div>
-                                <div class="won sub_txt gray3">80,000원</div>
-                                <div class="price">
-                                    <span class="percent list_tit apricot">20%</span>
-                                    <span class="won2 list_tit panBlack">64,000원 ~</span>  
-                                </div>
-                                <div class="review d-flex">
-                                    <span class="star sub_txt gray3">★</span>
-                                    <span class="jum sub_txt gray3">4.8</span>
-                                    <span class="number sub_txt gray3">(124)</span>
-                                </div>
-                                <button class="check_btn sub_txt gray3">
-                                    예약하기
-                                </button>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="con_box">
-                            <div class="con_img_box"><img src="./img/image/image7.jpg" alt="캠핑장" class="con_img" /></div>
-                            <div class="con_txt">
-                                <div class="location point_txt apricot">지역</div>
-                                <div class="camping basic_txt camping">캠핑장 이름</div>
-                                <div class="won sub_txt gray3">80,000원</div>
-                                <div class="price">
-                                    <span class="percent list_tit apricot">20%</span>
-                                    <span class="won2 list_tit panBlack">64,000원 ~</span>  
-                                </div>
-                                <div class="review d-flex">
-                                    <span class="star sub_txt gray3">★</span>
-                                    <span class="jum sub_txt gray3">4.8</span>
-                                    <span class="number sub_txt gray3">(124)</span>
-                                </div>
-                                <button class="check_btn sub_txt gray3">
-                                    예약하기
-                                </button>
-                            </div>
-                        </div>  
-                    </div>
-
-                
                 </div>
+                <div class="hereSwiper-pagination"></div>
+                    
+                <div class="here-button-prev"></div>
+                <div class="here-button-next"></div>
             </div>
-            <div class="hereSwiper-pagination"></div>
-                
-            <div class="here-button-prev"></div>
-            <div class="here-button-next"></div> 
-        </div>
+            <div class="mobile">
+                <div class="swiper-container" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-lg-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-lg-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="swiper-container" id="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-lg-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-lg-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-lg-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="con_box">
+                                <div class="con_img_box"><img src="./img/image/image1.jpg" alt="캠핑장" class="con_img" /></div>
+                                <div class="con_txt">
+                                    <div class="location point_txt apricot">지역</div>
+                                    <div class="camping basic_txt">캠핑장 이름</div>
+                                    <div class="won sub_txt gray3">80,000원</div>
+                                    <div class="price">
+                                        <span class="percent list_tit apricot">20%</span>
+                                        <span class="won2 list_tit panBlack">64,000원 ~</span>  
+                                    </div>
+                                    <div class="review d-lg-flex">
+                                        <span class="star sub_txt gray3">★</span>
+                                        <span class="jum sub_txt gray3">4.8</span>
+                                        <span class="number sub_txt gray3">(124)</span>
+                                    </div>
+                                    <button class="check_btn sub_txt gray3">
+                                        예약하기
+                                    </button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
 
-        <script>
-            const hereswiper = new Swiper(".hereSwiper", {
-                slidesPerView: "auto",
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                freeMode: false,
-                autoHeight : true,
-                loop: false,
-                loopAdditionalSlides: 1,
-                navigation: {
-                    nextEl: ".here-button-next",
-                    prevEl: ".here-button-prev",
-                },
-            });
-        </script>
+                <button class="mo-all-btn point_txt gray3 d-lg-none">전체보기</button>
+            </div>
+        </div>
     </div>  
     <!--// jeaeun three -->
 
@@ -934,6 +1020,101 @@
     <!-- //cha footer -->
 
 <script>
+    //지금여기
+    const nowswiper = new Swiper('.nowSwiper', {
+        slidesPerView: 2,
+        slidesPerGroup: 1,
+        grid: {
+            rows: 2,
+            fill: 'row',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        controller: {
+            control: null // 다른 슬라이더와 연동
+        },
+        freeMode: false,
+        navigation: {
+            nextEl: '.now-button-next',
+            prevEl: '.now-button-prev',
+        },
+        breakpoints: {
+            991: {
+                slidesPerView: 4,
+                slidesPerGroup: 1,
+                grid: {
+                    rows: 1,
+                    fill: 'row',
+                },
+            },
+        },
+        on: {
+            slideChange: function () {
+                // 현재 활성화된 슬라이드 인덱스
+                const activeIndex = this.activeIndex;
+
+                // 모든 페이지네이션 bullet 가져오기
+                const bullets = document.querySelectorAll('.swiper-pagination .swiper-pagination-bullet');
+
+                // 각 bullet에 대해 활성화 상태 적용
+                bullets.forEach((bullet, index) => {
+                    if (index <= activeIndex) {
+                        bullet.classList.add('swiper-pagination-bullet-active'); // 활성화 클래스 추가
+                    } else {
+                        bullet.classList.remove('swiper-pagination-bullet-active'); // 비활성화 클래스 제거
+                    }
+                });
+            },
+        },
+    });
+
+
+    
+    //오직여기_데스크탑
+    const hereswiper = new Swiper('.hereSwiper', {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        grid: {
+            rows: 2,
+            fill: 'row',
+        },
+        freeMode: false,
+        navigation: {
+            nextEl: '.here-button-next',
+            prevEl: '.here-button-prev',
+        },
+        breakpoints: {
+            991: {
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+                grid: {
+                    rows: 1,
+                    fill: 'row',
+                },
+            },
+        },
+    });
+
+    //오직여기_모바일
+    const swiper1 = new Swiper('#swiper1', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+    })
+    const swiper2 = new Swiper('#swiper2', {
+        slidesPerView: 1, // 한 번에 하나의 슬라이드만 표시
+        spaceBetween: 10, // 슬라이드 간 간격
+        grid: {
+            rows: 2, // 한 페이지에 2줄로 표시
+            fill: 'row', // 기본 행 방향으로 채우기
+        },
+    })
+    swiper1.controller.control = swiper2;
+    swiper2.controller.control = swiper1;
+
+
+    //공지사항
     const noticeSwiper = new Swiper(".notice_swiper", {
         direction: "vertical", // 위로 스크롤
         loop: true, // 무한 반복
@@ -947,6 +1128,8 @@
         noticeSwiper.slideNext(); // 다음 슬라이드로 이동
     });
 
+
+    //인기스팟
     const swiperCon = new Swiper(".conSwiper1", {
         slidesPerView: "auto",
         centeredSlides: true, 
@@ -964,6 +1147,8 @@
         },
     });
 
+
+    //소슬 sns
     const swiperYoutuber = new Swiper(".youtuber", {
         slidesPerView: "auto",
         autoplay: {
@@ -983,6 +1168,7 @@
     });
     
 
+    //갤러리
     const swiperTopNum = document.querySelectorAll('.gallery-top .swiper-slide');
     const swiperSubNum = document.querySelectorAll('.gallery-thumbs .swiper-slide');
     const swiperTxtNum = document.querySelectorAll('.gallery-txt .swiper-slide');
@@ -1018,27 +1204,21 @@
         loopedSlides: swiperSubNum.length, //loop 시 파라미터 duplicate 개수 - 정적으로 숫자 4 표현 가능
     });
 
-   
-
-    // 버튼 클릭 시, 모든 스와이퍼가 동시에 이동하도록 설정
     const nextButton = document.querySelector('.magazin-button-next');
     const prevButton = document.querySelector('.magazin-button-prev');
 
-    // next 버튼 클릭 시
     nextButton.addEventListener('click', () => {
         galleryTop.slideNext();
         galleryThumbs.slideNext();
         galleryTxt.slideNext();
     });
 
-    // prev 버튼 클릭 시
     prevButton.addEventListener('click', () => {
         galleryTop.slidePrev();
         galleryThumbs.slidePrev();
         galleryTxt.slidePrev();
     });
     
-    // 슬라이드 변경 시 동기화 설정
     const synchronizeSwipers = (swiperInstance) => {
         swiperInstance.on('slideChangeTransitionStart', () => {
             const currentIndex = swiperInstance.realIndex;
