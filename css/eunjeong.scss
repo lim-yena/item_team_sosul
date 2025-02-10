@@ -25,25 +25,26 @@ $border-color: #DDD;
 }
 
 #hd {
-  max-width: 120rem; // 1920px
   height: 4.5rem; // 72px
   position: relative;
   z-index: 10;
 
-  .container {
+  .container_full {
     margin: 0 auto;
     padding: 1.25rem 0; // 20px 0
   }
 }
-
-#gnb a {
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-weight: 700;
-  padding: 0.625rem; // 10px
-
-  &:hover {
-    color: $secondary-color;
+#gnb {
+  width:0;
+  a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 700;
+    padding: 0.625rem; // 10px
+  
+    &:hover {
+      color: $secondary-color;
+    }
   }
 }
 
@@ -63,12 +64,18 @@ $border-color: #DDD;
   font-weight: 600;
   gap: 0.3125rem; // 5px
   justify-content: flex-end;
-  padding: 0.3125rem 0.625rem; // 5px 10px
+  width:0;
+
+  a {
+    display: flex;
+    padding:10px 5px;
+    align-items: center;
+  }
 
   svg {
-    width: 1.25rem; // 20px
-    height: 1.25rem; // 20px
-    margin-right: 0.3125rem; // 5px
+    width: 1.5rem; // 20px
+    height: 1.5rem; // 20px
+
   }
 }
 
@@ -80,7 +87,6 @@ a {
 
 .mo-search {
   display: flex;
-  width: 100%;
   height: 3rem;
   border-radius: 100px;
   padding: 5px 10px;
@@ -179,7 +185,6 @@ a.list-group-reserve {
   left: 0;
   right: 0;
   margin: auto;
-  width: calc(100% - 30px);
   border-radius: 0.625rem; // 10px
   z-index: -1;
   clip-path: inset(0 round 0.625rem); // 10px
@@ -327,11 +332,17 @@ a.list-group-reserve {
   border-radius: 0 0 10% 10%;
 }
 
-h1 a img {
-  max-width: 7.5rem; // 120px
-  height: auto;
-  transition: all 0.3s ease;
+h1 {
+  font-size: small;
+  a {
+    img {
+      max-width: 7.5rem; // 120px
+      height: auto;
+      transition: all 0.3s ease;
+    }
+  }
 }
+
 
 @media (max-width: 991px) {
   h1 a img {

@@ -561,6 +561,9 @@
 .footer {
     padding:40px 0;
     background:#f6f6f6;
+    @media (max-width:991px) {
+        padding:40px 0 100px;
+    }
 
     .btm_info_box {
         position: relative;

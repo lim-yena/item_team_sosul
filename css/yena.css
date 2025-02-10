@@ -517,6 +517,11 @@
   padding: 40px 0;
   background: #f6f6f6;
 }
+@media (max-width: 991px) {
+  .footer {
+    padding: 40px 0 100px;
+  }
+}
 .footer .btm_info_box {
   position: relative;
 }
