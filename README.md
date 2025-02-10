@@ -20,48 +20,49 @@
 | PM | UI/UX | Publisher | 
 |:-----:|:-----:|:-----:|
 | 김은정 | 손재은 | 임예나 |
-| 이미지1 | 이미지2 | 이미지3 |
+| ![김은정](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/eunjung.svg) | ![손재은](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/jaeeun.svg) | ![임예나](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/yena.svg) |
 | ps,ai,html,css,figma | ps,ai,html,css,figma | ps,ai,html,css,figma |
 
 
 # 03. 브랜드 소개
 - [로고](#03-1-로고)
-- [아이콘](#03-2-아이콘)
-- [폰트](#03-3-폰트)
-- [컬러](#03-4-컬러)
-- [프리젠테이션](#03-5-프리젠테이션)
+- [폰트](#03-2-폰트)
+- [컬러](#03-3-컬러)
+- [프리젠테이션](#03-4-프리젠테이션)
 
 ## 03-1. 로고
-| 버전 | 미리보기 |
-|:-----:|:-----:|
-| 기본  | 이미지 |
+| 버전 | 기본 | 반전 |
+|:-----:|:-----:|:-----:|
+| 심볼 | ![기본](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/basic_symbol.svg) | ![반전](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/reversal_symbol.svg) |
+| 가로형 | ![기본](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/basic_width.svg) | ![반전](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/reversal_width.svg) |
+| 세로형 | ![기본](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/basic_length.svg) | ![반전](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/reversal_length.svg) |
 
-## 03-2. 아이콘
-| 버전 | 미리보기 |
-|:-----:|:-----:|
-| 기본  | 이미지 |
 
-## 03-3. 폰트
+## 03-2. 폰트
 | 폰트 | 링크 |
 |:-----:|:-----:|
-| SUIT | 링크주소넣기 |
+| SUIT | [SUIT](https://sun.fo/suit/) |
 
-## 03-4. 컬러
+
+## 03-3. 컬러
 | 메인컬러 | 색상코드 |
-|:-----:|:-----:|
-| Organic | rgba(63, 66, 47, 1) |
-| Apricot | rgba(214, 139, 48, 1) |
-| Ivory | rgba(250, 245, 238, 1) |
-| Panton Black C | rgba(51, 46, 42, 1) |
+|-----|-----|
+| ![Organic](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/organic.svg) Organic | #3F422F |
+| ![Ivory](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/ivory.svg) Ivory | #FAF5EE |
+| ![Apricot](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/apricot.svg) Apricot | #D68B30 |
+| ![Panton Black C](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/panBlack.svg) Panton Black C | #332E2A |
 
 | 서브컬러 | 색상코드 |
-|:-----:|:-----:|
-| Black | rgba(63, 66, 47, 1) |
-| Apricot | rgba(214, 139, 48, 1) |
-| Ivory | rgba(250, 245, 238, 1) |
-| Panton Black C | rgba(51, 46, 42, 1) |
+|-----|-----|
+| ![Black](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/black.svg) Black | #111 |
+| ![Gray1](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/gray1.svg) Gray1 | #444 |
+| ![Gray2](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/gray2.svg) Gray2 | #777 |
+| ![Gray3](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/gray3.svg) Gray3 | #ddd |
+| ![Gray4](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/gray4.svg) Gray4 | #f6f6f6 |
+| ![White](https://github.com/lim-yena/item_team_sosul/blob/main/img/readme/white.svg) White | #fff |
 
-## 03-5. 프리젠테이션
-프리젠테이션 링크 넣기
+
+## 03-4. 프리젠테이션
+[소슬](bit.ly/_sosul2)
 
 
