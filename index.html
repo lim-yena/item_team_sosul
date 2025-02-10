@@ -133,8 +133,8 @@
     <!-- eunjeong  mob-menu -->
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="categoryMenu" aria-labelledby="categoryMenuLabel">
-        <div class="offcanvas-header list_tit">
-            <h5 id="categoryMenuLabel">로그인해주세요</h5>
+        <div class="mob-top-text offcanvas-header">
+            <div class="mob_menu_text list_tit">로그인해주세요</div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
@@ -184,29 +184,74 @@
                     <span>고객센터</span>
                 </li>
             </ul>
+            
+            <ul class="mob_container d-flex gray5_bg">
+                <li class="mob_notice aic d-flex sub_txt">
+                    <a class="apricot">HOT</a>
+                    <a href="" class="gray1">공지사항이 출력됩니다.</a>
+                </li>
+            </ul>
 
             <ul class="d-flex flex-column align-items-start gap-2 p-3 w-100">
-                <li class="list-group-text point_txt">예약하기</li>
+                <li class="list-group-text sub_txt gray3 ">예약하기</li>
                 <li class="container">
                     <div class="row g-2">
                         <div class="col-6">
-                            <a href="" class="d-block py-2">캠핑</a>
+                            <a href="" class="mob_menu d-block py-2 basic_txt ">캠핑</a>
                         </div>
                         <div class="col-6">
-                            <a href="" class="d-block py-2">글램핑</a>
+                            <a href="" class="mob_menu d-block py-2 basic_txt">글램핑</a>
                         </div>
                         <div class="col-6">
-                            <a href="" class="d-block py-2">카라반</a>
+                            <a href="" class="mob_menu d-block py-2 basic_txt">카라반</a>
                         </div>
                         <div class="col-6">
-                            <a href="" class="d-block py-2">차박</a>
+                            <a href="" class="mob_menu d-block py-2 basic_txt">차박</a>
                         </div>
                     </div>
                 </li>
             </ul>
-                <li class="list-group-item">테마별</li>
+            <hr class="my-3 border-secondary"> 
 
-                <li class="list-group-item">프로모션</li>
+            <ul class="d-flex flex-column align-items-start gap-2 p-3 w-100">
+                <li class="list-group-text sub_txt gray3">테마별</li>
+                <li class="container">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">키즈캠핑</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">반려견동반</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">이색체험</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">소슬단독스팟</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <hr class="my-3 border-secondary"> 
+
+            <ul class="d-flex flex-column align-items-start gap-2 p-3 w-100">
+                <li class="list-group-text sub_txt gray3">프로모션</li>
+                <li class="container">
+                    <div class="row g-2 panBlack">
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">이벤트</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">지금 할인중</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">신규오픈</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="" class="mob_menu d-block py-2 basic_txt">마감임박</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -308,7 +353,7 @@
             </svg>
             <span>로그인</span>
         </button>
-        <button class="quick-btn btn-top organic white_bg">
+        <button class="quick-btn btn-top organic organic_bg white">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                 <path d="M7 22L17.0186 12" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
                 <path d="M17.0186 12L27.0001 22" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>

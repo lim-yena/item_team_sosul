@@ -125,21 +125,38 @@ a {
 .list-group-text{
   align-items: flex-start;
   gap : 10px;
-  padding: 20px 5px;
+  padding:0;
 }
 
 a.list-group-reserve {
   width: calc(50% - 5px);
   align-items: flex-start;
   text-align: center;
-  padding: 20px 5px;
 }
 
-// .custom-col {
-//   font-size: 14px;
-//   font-weight: 800;
-//   text-align: center;
+.mob-top-text{
+  position: relative;
+}
 
+.mob_menu_text {
+  position: absolute;
+  font-weight: 800;
+  margin-top: 40px;
+}
+
+.mob_menu {
+  font-weight: 700;
+}
+
+.mob_container{
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.mob_notice{
+  gap: 5px;
+}
 
 .video-container {
   position: relative;
