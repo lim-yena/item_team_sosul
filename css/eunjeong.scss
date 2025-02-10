@@ -15,6 +15,7 @@ $border-color: #DDD;
   justify-content: space-between;
 }
 
+
 .aic {
   align-items: center;
 }
@@ -24,38 +25,30 @@ $border-color: #DDD;
 }
 
 #hd {
+  max-width: 120rem; // 1920px
   height: 4.5rem; // 72px
   position: relative;
   z-index: 10;
-  position: relative;
-  @media (max-width:991px) {
-    height:3.5rem;
-  }
-  h1 {
-    font-size:initial;
+
+  .container {
+    margin: 0 auto;
+    padding: 1.25rem 0; // 20px 0
   }
 }
-#gnb {
-  width:0;
-  a {
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-weight: 700;
-    padding: 0.625rem; // 10px
-  
-    &:hover {
-      color: $secondary-color;
-    }
+
+#gnb a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 700;
+  padding: 0.625rem; // 10px
+
+  &:hover {
+    color: $secondary-color;
   }
 }
 
 .Category-btn {
   border: none;
-  width:0;
-  svg {
-    width:26px;
-    height:26px;
-  }
 }
 
 .top-logo {
@@ -71,28 +64,87 @@ $border-color: #DDD;
   gap: 0.3125rem; // 5px
   justify-content: flex-end;
   padding: 0.3125rem 0.625rem; // 5px 10px
-  width:0;
-  @media (max-width:991px) {
-    padding:0;
-  }
 
   svg {
-    width: 1.75rem; // 20px
-    height: 1.75rem;; // 20px
+    width: 1.25rem; // 20px
+    height: 1.25rem; // 20px
     margin-right: 0.3125rem; // 5px
   }
 }
 
 a {
-  display:block;
   gap: 0.3125rem;
   text-decoration: none;
   color: $primary-color;
 }
 
+.mo-search {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  border-radius: 100px;
+  padding: 5px 10px;
+  border: 1px solid #DDD;
+  gap: 0.313rem;
+  margin-bottom: 10px;
+}
+
+.mo-search-btn{
+  width: 100%;
+  color: #777;
+  border: none;
+  font-weight: 500;
+  text-align: left;
+}
+
+.offcanvas {
+  width: 300px; }
+
+.list-group{
+ margin-top: 20px;
+}
+
+.list-group-item {
+  width: 60px;
+  padding: 0px 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+
+.icon_area_ej {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #EEE;
+  padding:0 5px;
+}
+
+
+.list-group-text{
+  align-items: flex-start;
+  gap : 10px;
+  padding: 20px 5px;
+}
+
+a.list-group-reserve {
+  width: calc(50% - 5px);
+  align-items: flex-start;
+  text-align: center;
+  padding: 20px 5px;
+}
+
+// .custom-col {
+//   font-size: 14px;
+//   font-weight: 800;
+//   text-align: center;
+
+
 .video-container {
   position: relative;
-  height: calc(100vh - 100px); 
+  max-width: 100%;
+  height: calc(100vh - 80px); 
   margin: 0 auto;
   @extend .d-flex;
   justify-content: center;
@@ -100,28 +152,17 @@ a {
   overflow: hidden;
   border-radius: 0.625rem; // 10px
   z-index: -1;
-
-  video {
-    height:100%;
-    @media (max-width:991px) {
-      height:auto;
-      width:100%;
-    }
-
-    @media (max-width:480px) {
-      height:100%;
-      width:auto;
-    }
-  }
 }
 
 .video-bg {
   position: absolute;
+  max-width: 112.375rem; // 1798px
   height: 100%; // 870px
   top: 0;
   left: 0;
   right: 0;
   margin: auto;
+  width: calc(100% - 30px);
   border-radius: 0.625rem; // 10px
   z-index: -1;
   clip-path: inset(0 round 0.625rem); // 10px
@@ -140,39 +181,26 @@ a {
 
 .search-box {
   position: absolute;
+  max-width: 89.6875rem; // 1435px
   height: 5rem; // 80px
   @extend .jcc;
   align-content: center;
-  top: 100%;
+  top: 4.5rem; // 72px
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  width:100%;
-  max-width:1440px;
-  
-  .search-bg{
-    svg {
-      margin:0 auto;
-      height:100%;
-    }
-  }
 }
 
 .search-container {
+  position: absolute;
+  width: 89.6875rem; // 1435px
+  height: 4.25rem; // 68px
+  gap: 1.3125rem; // 21px
   @extend .jcc;
   align-items: flex-end;
-  margin:0 auto;
-  ::before {
-    content: '';
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1435' height='80' viewBox='0 0 1435 80' fill='none'%3E%3Cpath d='M0 0H1435L1398.51 60.6284C1391.27 72.6491 1378.27 80 1364.24 80H70.7646C56.7343 80 43.7296 72.6491 36.494 60.6284L0 0Z' fill='white'/%3E%3C/svg%3E") no-repeat center;
-    background-size:cover;
-    width:100%;
-    height:100%;
-    position: absolute;
-    top:0; left:0;
-    max-width:1440px;
-    z-index: -1;
-  }
+  left: 50%;
+  top: 4.5rem; // 72px
+  transform: translateX(-50%);
 }
 
 .topwhere,
@@ -229,6 +257,7 @@ a {
   border-radius: 3.125rem; // 50px
   text-align: center;
 }
+
 
 .quick-menu {
   position: fixed;
@@ -292,11 +321,6 @@ h1 a img {
     width: 5.6875rem; // 91px
   }
 
-//   .search-box {
-//     top: 8%;
-//     height: 0.3125rem; // 5px
-//     width: 95%;
-//   }
 .video-container {
     height: 21.875rem; 
   }
@@ -305,13 +329,13 @@ h1 a img {
     height: 21.875rem; 
   }
   
+  .search-box, 
+  .search-container {
+      display: none;  /* 작은 화면에서 검색 UI 숨김 */
+  }
 
-
-//   .video-bg video {
-//     width: 90vw;
-//     max-width: 100%;
-//     height: 31.25rem; // 500px
-//     max-height: 70vh;
-//     object-fit: cover;
-//   }
+@media (min-width: 991px) { /* lg 이상에서는 기본 검색 UI 보이도록 */
+  .mo-search {
+      display: none }
+  }
 }
