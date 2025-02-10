@@ -298,3 +298,31 @@
 .main_con_three .here-button-prev::after {
   display: none;
 }
+
+.mobile_bottom {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  border-top: 1px solid #ddd;
+}
+.mobile_bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  flex-direction: column;
+  width: 20%;
+  color: #aaa;
+}
+.mobile_bottom a:hover {
+  color: #3f422f;
+}
+.mobile_bottom a:hover svg line, .mobile_bottom a:hover svg path {
+  stroke: #3f422f;
+}
