@@ -55,11 +55,15 @@
   
         .price {
             font-weight: 700;
+            @media (max-width:480px) {
+                font-size:16px;
+            }
         }
   
         .percent {
             margin-right: 5px;
         }
+
         .won {
             text-decoration: line-through;
         }
