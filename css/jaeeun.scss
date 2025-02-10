@@ -325,4 +325,36 @@
         .here-button-prev::after {
             display: none;
         }
+
+    
+    }
+
+    // 모바일 바텀 css
+    .mobile_bottom { 
+        display: flex;
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        left: 0; right: 0;
+        width: 100%;
+        z-index: 10;
+        border-top: 1px solid #ddd;
+        
+    
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;        
+            flex-direction: column;
+            width:20%;
+            color:#aaa;
+            &:hover {
+                svg line, svg path {
+                    stroke: #3f422f;
+                }
+                color: #3f422f;
+            }
+        }
     }
