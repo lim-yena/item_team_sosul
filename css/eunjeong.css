@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .d-flex, .quick-menu, .video-container {
   display: flex;
 }
@@ -19,23 +20,16 @@
 }
 
 #hd {
+  max-width: 120rem;
   height: 4.5rem;
   position: relative;
   z-index: 10;
-  position: relative;
 }
-@media (max-width: 991px) {
-  #hd {
-    height: 3.5rem;
-  }
-}
-#hd h1 {
-  font-size: initial;
+#hd .container {
+  margin: 0 auto;
+  padding: 1.25rem 0;
 }
 
-#gnb {
-  width: 0;
-}
 #gnb a {
   text-decoration: none;
   transition: color 0.3s ease;
@@ -48,11 +42,6 @@
 
 .Category-btn {
   border: none;
-  width: 0;
-}
-.Category-btn svg {
-  width: 26px;
-  height: 26px;
 }
 
 .top-logo {
@@ -68,29 +57,80 @@
   gap: 0.3125rem;
   justify-content: flex-end;
   padding: 0.3125rem 0.625rem;
-  width: 0;
-}
-@media (max-width: 991px) {
-  .util {
-    padding: 0;
-  }
 }
 .util svg {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
   margin-right: 0.3125rem;
 }
 
 a {
-  display: block;
   gap: 0.3125rem;
   text-decoration: none;
   color: #3F422F;
 }
 
+.mo-search {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  border-radius: 100px;
+  padding: 5px 10px;
+  border: 1px solid #DDD;
+  gap: 0.313rem;
+  margin-bottom: 10px;
+}
+
+.mo-search-btn {
+  width: 100%;
+  color: #777;
+  border: none;
+  font-weight: 500;
+  text-align: left;
+}
+
+.offcanvas {
+  width: 300px;
+}
+
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  width: 60px;
+  padding: 0px 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+
+.icon_area_ej {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #EEE;
+  padding: 0 5px;
+}
+
+.list-group-text {
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px 5px;
+}
+
+a.list-group-reserve {
+  width: calc(50% - 5px);
+  align-items: flex-start;
+  text-align: center;
+  padding: 20px 5px;
+}
+
 .video-container {
   position: relative;
-  height: calc(100vh - 100px);
+  max-width: 100%;
+  height: calc(100vh - 80px);
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -98,29 +138,16 @@ a {
   border-radius: 0.625rem;
   z-index: -1;
 }
-.video-container video {
-  height: 100%;
-}
-@media (max-width: 991px) {
-  .video-container video {
-    height: auto;
-    width: 100%;
-  }
-}
-@media (max-width: 480px) {
-  .video-container video {
-    height: 100%;
-    width: auto;
-  }
-}
 
 .video-bg {
   position: absolute;
+  max-width: 112.375rem;
   height: 100%;
   top: 0;
   left: 0;
   right: 0;
   margin: auto;
+  width: calc(100% - 30px);
   border-radius: 0.625rem;
   z-index: -1;
   -webkit-clip-path: inset(0 round 0.625rem);
@@ -140,35 +167,24 @@ a {
 
 .search-box {
   position: absolute;
+  max-width: 89.6875rem;
   height: 5rem;
   align-content: center;
-  top: 100%;
+  top: 4.5rem;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  width: 100%;
-  max-width: 1440px;
-}
-.search-box .search-bg svg {
-  margin: 0 auto;
-  height: 100%;
 }
 
 .search-container {
-  align-items: flex-end;
-  margin: 0 auto;
-}
-.search-container ::before {
-  content: "";
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1435' height='80' viewBox='0 0 1435 80' fill='none'%3E%3Cpath d='M0 0H1435L1398.51 60.6284C1391.27 72.6491 1378.27 80 1364.24 80H70.7646C56.7343 80 43.7296 72.6491 36.494 60.6284L0 0Z' fill='white'/%3E%3C/svg%3E") no-repeat center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 1440px;
-  z-index: -1;
+  width: 89.6875rem;
+  height: 4.25rem;
+  gap: 1.3125rem;
+  align-items: flex-end;
+  left: 50%;
+  top: 4.5rem;
+  transform: translateX(-50%);
 }
 
 .topwhere,
@@ -287,5 +303,14 @@ h1 a img {
   }
   .video-bg {
     height: 21.875rem;
+  }
+  .search-box,
+  .search-container {
+    display: none; /* 작은 화면에서 검색 UI 숨김 */
+  }
+}
+@media (max-width: 991px) and (min-width: 991px) { /* lg 이상에서는 기본 검색 UI 보이도록 */
+  .mo-search {
+    display: none;
   }
 }
