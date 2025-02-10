@@ -63,6 +63,6 @@
 
 
 ## 03-4. 프리젠테이션
-[소슬](bit.ly/_sosul2)
+[소슬](https://bit.ly/_sosul2)
 
 
